@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <title>Philip Manfred Pincencia: Blogs</title>
+        <link rel="stylesheet" type="text/css" href="my_style.css">
+        
+    </head>
+    <body>
+        <!-- Navbar (sit on top) -->
+        <nav class="navbar w3-white navbar-fixed-to-top navbar-default" role="navigation">
+            <div class="container-fluid">
+                <a href="#" class="w3-bar-item w3-button w3-wide"><span class="glyphicon glyphicon-th"></span> <i>Still-Developing</i></a>
+                <!-- Right-sided navbar links -->
+                <div class="w3-right w3-hide-small">
+                    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+                    <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+                    <a href="#" class="w3-bar-item w3-button active">BLOGS</a>
+                    <a href="project.html" class="w3-bar-item w3-button">PROJECTS</a>
+                </div>
+                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+        <!-- Sidebar on small screens when clicking the menu icon -->
+        <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+          <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+          <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+          <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+          <a href="#" onclick="w3_close()" class="w3-bar-item w3-button active">BLOGS</a>
+          <a href="project.html" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
+         </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2 style="border:1px solid white;;padding:30px;" id="blog-sign">Blogs</h2>
+                </div><!--col-sm-6-->
+                <div style="margin:auto;" class="col-sm-5">
+                    <input class="form-control" id="myInput" type="text" placeholder="Categories..(e.g. food, sport, music,)">
+                </div><!--col-sm-4-->
+            </div><!--row-->
+            <br><br>
+            <div class="row">
+                <div class="col-sm-7">
+                    <table style="background-color:white" class="table table-hover table-bordered">
+                        <tbody id="myTable">
+                            <tr>
+                                <td><h5><b>How to Exercise Properly?</b><small>(sport)</small> <span class="label label-default">New</span></h5></td>
+                            </tr>
+                            <tr>
+                                <td><h5><b>How to Practice Music Effeciently?</b><small>(music)</small></h5></td>
+                            </tr>
+                            <tr>
+                                <td><h5><b>The Optimum Diet<small>(sport,diet)</b></small></h5></td>
+                            </tr>
+                            <tr>
+                                <td><h5><b>Building Muscles<small>(sport,exercise)</b></small> <span class="label label-default">Coming Soon</span></h5></td>
+                            </tr>
+                            <tr>
+                                <td><h5><b>Writing a Song<small>(music,composing)</b></small></h5></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                    
+                    <script>
+                    $(document).ready(function(){
+                      $("#myInput").on("keyup", function() {
+                        var value = $(this).val().toLowerCase();
+                        $("#myTable tr").filter(function() {
+                          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                        });
+                      });
+                    });
+                    </script>
+                </div><!--col-sm-7-->
+                
+                <div class="col-sm-4 all-quotes">
+                    <table style="background-color:white;" class="table table-striped table-bordered">
+                        <tbody>
+                            <tr>
+                                <td style="background-color:#4ebeda;color:white;"><b>Inspirational & Motivational Quotes</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <table class="table-striped table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <td><h5><i>"If you ask what Jazz is,<br>
+                                            you'll never know." - Louis Armstrong</i><small>(music)</small></h5></td>
+                                        </tr>
+                            
+                                        <tr>
+                                            <td><h5><i>"If music be the food of love,<br>
+                                            play on, Give me excess of it; that surfeiting,<br>
+                                            The appetite may sicken, and so die." - William Shakespeare</i><small>(music)</small></h5></td>
+                                        </tr>
+                            
+                                        <tr>
+                                            <td><h5><i>"One good thing about music, when it hits you,<br>
+                                            you feel no pain." - Bob Marley</i><small>(music)</small></h5></td>
+                                        </tr>
+                                    </tbody>  
+                                </table>
+                            </div>
+
+                            <div class="item">
+                                <table class="table-striped table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <td><h5><i>"Where words fail, music speaks." - Hans Christian Andersen</i><small>(music)</small></h5></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td><h5><i>"A painter paints pictures on canvas. But musicians<br>
+                                            paint their pictures on silence." - Leopold Stokowski</i><small>(music)</small></h5></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td><h5><i>"Who hears music, feels his solitude<br>
+                                            Peopled at once." - Robert Browning</i><small>(music)</small></h5></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+    
+                            <div class="item">
+                                <table class="table-striped table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <td><h5><i>"Physical fitness can neither be achieved by wishful thinking<br>
+                                            nor outright purchase" - Joseph Pilates</i><small>(exercise,sport)</small></h5></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td><h5><i>"Movement is a medicine for creating change in a person's physical,<br>
+                                            emotional, and mental states." - Carol Welch</i><small>(exercise,sport)</small></h5></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td><h5><i>"I have to exercise in the morning<br>
+                                            before my brain figures out what I'm doing." - Marsha Doble</i><small>(exercise,sport)</small></h5></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <div class="item">
+                                <table class="table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <td><h5><i>"Exercise should be regarded as tribute to the heart."<br>
+                                            - Gene Tunney</i><small>(exercise,sport)</small></h5></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td><h5><i>"A man's health can be judged by which he takes two<br>
+                                            at a time - pills or stairs." -Joan Welsh</i><small>(exercise,sport)</small></h5></td>
+                                        </tr>
+                                        
+                                         <tr>
+                                            <td><h5><i>"Those who think they have not time for bodily exercise<br>
+                                            will sooner or later have to find time for illness."<br>
+                                            -Edward Stanley</i><small>(exercise,sport)</small></h5></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div><!--carousel-inner-->
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                    </div><!--carousel-->
+                </div><!--col-sm-4-->
+        </div><!--container-->
+    </body>
+</html>
