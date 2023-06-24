@@ -1,6 +1,6 @@
 # Personal Website
 ---
-</br>
+
 ## Purpose: 
 * Quick links to my Resume, GitHub, LinkedIn, etc
 * 
