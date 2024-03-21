@@ -126,7 +126,7 @@ a.ayoo:hover, .kemon:hover {
 }
 #FreqSelectiveLightShow {
     display: block;
-
+    height: auto;
     max-width: 42.0%;
     margin: 0 auto;
     width: auto;
