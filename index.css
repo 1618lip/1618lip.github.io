@@ -124,6 +124,13 @@ a.ayoo:hover, .kemon:hover {
     margin: 0 auto;
     width: auto;
 }
+#FreqSelectiveLightShow {
+    display: block;
+    height: auto;
+    max-width: 50.0%;
+    margin: 0 auto;
+    width: auto;
+}
 #UltrasonicSensorAutomation {
     display: block;
     
