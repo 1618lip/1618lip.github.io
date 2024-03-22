@@ -115,6 +115,7 @@ a.ayoo:hover, .kemon:hover {
     height: auto;
     max-width: 44.4%;
     margin: 0 auto;
+    margin-top: -1;
     width: auto;
 }
 #ReactiveNightLamp {
