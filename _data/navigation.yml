@@ -1,0 +1,14 @@
+# main links links
+main:
+  - title: "Teaching"
+    url: /teaching/    
+    
+  - title: "Resume"
+    url: /files/Philip_Pincencia_resume.pdf
+    target: "_blank"
+    
+  - title: "Courses"
+    url: /courses/
+    
+  - title: "Projects"
+    url: /projects/
