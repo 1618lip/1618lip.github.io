@@ -8,10 +8,14 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I am an undergraduate student at UC San Diego. I am highly interested in Digital Signal Processing, Communication Systems, and Fun Math Topics. 
+Hello! I am an undergraduate student at UC San Diego. I am highly interested in Digital Signal Processing, Probability, and Fun Math Topics.
+
+Some Achievements:
+- Top 8 UCSD Integration Bee 2023
+- World Mathematics Invitational Finalist 2021
+- Semifinalist of Parahyangan Catholic University Mathematics Competition (KOMAT UNPAR 2021)
 
 You can email me at ppincencia@ucsd.edu or ppincencia@ieee.org
-
 
 Cool topics: 
 > - A cool derivation of the <a href="files/Period_of_an_Undamped_Pendulum.pdf" target="_blank" >Period of Undamped Pendulum</a>
