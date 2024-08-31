@@ -1,5 +1,5 @@
 ---
-title: Triple Point Band"
+title: "Triple Point Band"
 excerpt: "Fusion band based in UCSD<br/>
           [@triplepoint.band](https://www.instagram.com/triplepoint.band?igsh=MzRlODBiNWFlZA==)<br/><img src='https://images.app.goo.gl/fhqZZDgd6YyvADzPA'>"
 collection: portfolio
