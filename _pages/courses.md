@@ -21,8 +21,9 @@ author_profile: true
 - ECE 101: Linear Systems Fundamentals (A+)
 - ECE 109: Probability and Statistics (A+)
 - ECE 161A: Intro to Digital Signal Processing (PL)
-- ECE 174: Optimization (PL)
+- ECE 174: Optimization (Audit)
 - ECE 250: Graduate Random Processes (A-)
+- ECE 251C: Filter Banks & Wavelets (Audit)
 
 <!-- -->
 - CSE 8A: Intro to Programming I Python (A+)
@@ -37,7 +38,6 @@ author_profile: true
 - CSE 140: Digital Logic (A)
 - CSE 140L: Digital Systems Laboratory (A)
 - CSE 141: Computer Architecture (PL)
-- CSE 141L: Project in Computer Architecture (PL)
 
 - PHYS 2A: Mechanics (A+)
 - PHYS 2B: Electricity and Magnetism (A)
