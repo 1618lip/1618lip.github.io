@@ -5,20 +5,48 @@ excerpt: "Using Variable Order Markov Model Algorithm with Harmonic Context to m
 collection: projects
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VOMM for Melodic Complexity Analysis in Jazz Improvisation</title>
+    <title>PDF in HTML</title>
 </head>
+<style>
+    .pdf {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+    }
+
+    .pdf,
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1,
+    h3 {
+        text-align: center;
+    }
+
+    h1 {
+        color: green;
+    }
+</style>
+
 <body>
 
-<!-- <iframe src="files/Philip_Pincencia_resume.pdf" width="100%" height="600px">
-    Your browser does not support iframes.
-</iframe>
-<embed src="https://drive.google.com/viewerng/
-viewer?embedded=true&url=http://example.com/the.pdf" width="500" height="375"> -->
-          
+    <h1>GeeksforGeeks</h1>
+    <h3>Embedding the PDF file Using Object Tag</h3>
+    <object class="pdf" 
+            data=
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf"
+            width="800"
+            height="500">
+    </object>
+</body>
+
+</html>
 <object data="https://github.com/1618lip/1618lip.github.io/blob/main/files/Research_Paper.pdf" type="application/pdf" width="300" height="200">
   If pdf doesn't load : <a href="https://github.com/1618lip/1618lip.github.io/blob/main/files/Research_Paper.pdf">Link</a>
 </object>
