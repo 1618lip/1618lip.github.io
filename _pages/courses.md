@@ -18,7 +18,8 @@ author_profile: true
 - ECE 35: Analog Circuit Analysis 
 - ECE 45: Signals and Systems 
 - ECE 65: Components and Circuits Lab 
-- ECE 101: Linear Systems Fundamentals 
+- ECE 101: Linear Systems Fundamentals
+- ECE 108: Digital Circuits
 - ECE 109: Probability and Statistics 
 - ECE 161A: Intro to Digital Signal Processing 
 - ECE 250: Graduate Random Processes 
@@ -44,7 +45,8 @@ author_profile: true
 <!-- -->
 - ECON 1: Intro to Macroeconomics 
 - ECON 138: Economics of Discrimination 
-- MUS 137A: Jazz Theory 
+- MUS 137A: Jazz Theory
+- MUS 137B: Jazz Improvisation (PL)
 
 <!-- -->
 - AWP 4A: Analytical Writing I 
