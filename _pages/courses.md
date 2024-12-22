@@ -27,9 +27,9 @@ author_profile: true
 - ECE 250: Graduate Random Processes
 - ECE 251A: Digital Signal Processing (PL)
 - ECE 269: Graduate Linear Algebra (PL)
-
 <!-- -->
-- CSE 8A: Intro to Programming I Python 
+
+- CSE 8A: Intro to Programming I Python
 - CSE 11: Intro to Programming II Java 
 - CSE 12: Basic Data Structures & OOP 
 - CSE 15L: Intro to UNIX/Shell Scripting 
@@ -41,25 +41,25 @@ author_profile: true
 - CSE 140: Digital Logic 
 - CSE 140L: Digital Systems Laboratory 
 - CSE 141: Computer Architecture 
+<!-- -->
 
 - PHYS 2A: Mechanics 
 - PHYS 2B: Electricity and Magnetism 
 - PHYS 2C: Waves, Optics, Fluids, and Thermodyanmics 
-  
 <!-- -->
+
 - ECON 1: Intro to Macroeconomics
 - ECON 109: Game Theory (PL)
 - ECON 138: Economics of Discrimination 
 - MUS 137A: Jazz Theory
 - MUS 137B: Jazz Improvisation (PL)
-
 <!-- -->
+
 - AWP 4A: Analytical Writing I 
 - AWP 4B: Analytical Writing II 
 - WCWP 10A: Warren Writing 
 - WCWP 10B: Warren Writing 
 - PHIL 27: Ethics and Society
-
 <!-- -->
 
 ### Transfer coursework:
