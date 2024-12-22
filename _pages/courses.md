@@ -15,7 +15,7 @@ author_profile: true
 - MATH 109: Proofs
 - MATH 140A: Real Analysis (PL)
 <!-- -->
----
+
 - ECE 35: Analog Circuit Analysis 
 - ECE 45: Signals and Systems 
 - ECE 65: Components and Circuits Lab 
@@ -28,7 +28,8 @@ author_profile: true
 - ECE 251A: Digital Signal Processing (PL)
 - ECE 269: Graduate Linear Algebra (PL)
 <!-- -->
----
+
+
 - CSE 8A: Intro to Programming I Python
 - CSE 11: Intro to Programming II Java 
 - CSE 12: Basic Data Structures & OOP 
@@ -42,7 +43,7 @@ author_profile: true
 - CSE 140L: Digital Systems Laboratory 
 - CSE 141: Computer Architecture 
 <!-- -->
----
+
 
 - PHYS 2A: Mechanics 
 - PHYS 2B: Electricity and Magnetism 
