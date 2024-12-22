@@ -12,7 +12,8 @@ author_profile: true
 - MATH 20D: Intro to Differential Equations
 - MATH 20E: Vector Calculus 
 - MATH 100A: Abstract Algebra I 
-- MATH 109: Proofs 
+- MATH 109: Proofs
+- MATH 140A: Real Analysis (PL)
 <!-- -->
 
 - ECE 35: Analog Circuit Analysis 
@@ -21,8 +22,11 @@ author_profile: true
 - ECE 101: Linear Systems Fundamentals
 - ECE 108: Digital Circuits
 - ECE 109: Probability and Statistics 
-- ECE 161A: Intro to Digital Signal Processing 
-- ECE 250: Graduate Random Processes 
+- ECE 161A: Intro to Digital Signal Processing
+- ECE 176: Deep Learning (PL)
+- ECE 250: Graduate Random Processes
+- ECE 251A: Digital Signal Processing (PL)
+- ECE 269: Graduate Linear Algebra (PL)
 
 <!-- -->
 - CSE 8A: Intro to Programming I Python 
@@ -43,7 +47,8 @@ author_profile: true
 - PHYS 2C: Waves, Optics, Fluids, and Thermodyanmics 
   
 <!-- -->
-- ECON 1: Intro to Macroeconomics 
+- ECON 1: Intro to Macroeconomics
+- ECON 109: Game Theory (PL)
 - ECON 138: Economics of Discrimination 
 - MUS 137A: Jazz Theory
 - MUS 137B: Jazz Improvisation (PL)
@@ -53,7 +58,7 @@ author_profile: true
 - AWP 4B: Analytical Writing II 
 - WCWP 10A: Warren Writing 
 - WCWP 10B: Warren Writing 
-- PHIL 27: Ethics and Society 
+- PHIL 27: Ethics and Society
 
 <!-- -->
 
