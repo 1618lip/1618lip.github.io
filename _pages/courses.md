@@ -25,7 +25,7 @@ author_profile: true
 - ECE 161A: Intro to Digital Signal Processing
 - ECE 176: Deep Learning (PL)
 - ECE 250: Graduate Random Processes
-- ECE 251A: Digital Signal Processing (PL)
+- ECE 251A: Graduate Digital Signal Processing (PL)
 - ECE 269: Graduate Linear Algebra (PL)
 <!-- -->
 
