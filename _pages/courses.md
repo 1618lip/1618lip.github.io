@@ -13,7 +13,6 @@ author_profile: true
 - MATH 20E: Vector Calculus 
 - MATH 100A: Abstract Algebra I 
 - MATH 109: Proofs
-- MATH 140A: Real Analysis (PL)
 <!-- -->
 
 - ECE 35: Analog Circuit Analysis 
@@ -21,12 +20,15 @@ author_profile: true
 - ECE 65: Components and Circuits Lab 
 - ECE 101: Linear Systems Fundamentals
 - ECE 108: Digital Circuits
-- ECE 109: Probability and Statistics 
+- ECE 109: Probability and Statistics
+- ECE 111: Advanced Digital Design (PL)
+- ECE 158B: Networking (IP)
 - ECE 161A: Intro to Digital Signal Processing
-- ECE 176: Deep Learning (PL)
+- ECE 176: Deep Learning (IP)
 - ECE 250: Graduate Random Processes
-- ECE 251A: Graduate Digital Signal Processing (PL)
-- ECE 269: Graduate Linear Algebra (PL)
+- ECE 251A: Graduate Digital Signal Processing (IP)
+- ECE 269: Graduate Linear Algebra (IP)
+- ECE 273: Convex Optimization (PL)
 <!-- -->
 
 
@@ -38,10 +40,13 @@ author_profile: true
 - CSE 21: Mathematics for Algorithm Analysis
 - CSE 30: Computer Organization & Systems Programming
 - CSE 100: Advanced Data Structures 
-- CSE 101: Design and Analysis of Algorithms 
+- CSE 101: Design and Analysis of Algorithms
+- CSE 120: Operating Systems
 - CSE 140: Digital Logic 
 - CSE 140L: Digital Systems Laboratory 
-- CSE 141: Computer Architecture 
+- CSE 141: Computer Architecture
+- CSE 153: Machine Learning for Music (PL)
+- CSE 224: Computer Networks (PL)
 <!-- -->
 
 
@@ -51,17 +56,19 @@ author_profile: true
 <!-- -->
 
 - ECON 1: Intro to Macroeconomics
-- ECON 109: Game Theory (PL)
+- ECON 109: Game Theory (IP)
 - ECON 138: Economics of Discrimination 
 - MUS 137A: Jazz Theory
-- MUS 137B: Jazz Improvisation (PL)
+- MUS 137B: Jazz Improvisation I (IP)
+- MUS 137C: Jazz Improvisation II (PL)
 <!-- -->
 
 - AWP 4A: Analytical Writing I 
 - AWP 4B: Analytical Writing II 
 - WCWP 10A: Warren Writing 
 - WCWP 10B: Warren Writing 
-- PHIL 27: Ethics and Society
+- PHIL 27: Ethics and Society I
+- POLI 28: Ethics and Society II (PL)
 <!-- -->
 
 ### Transfer coursework:
