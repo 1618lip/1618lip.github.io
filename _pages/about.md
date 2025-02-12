@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I am an undergraduate student at UC San Diego. I am highly interested in Digital Signal Processing, Probability, and Fun Math Topics.
+Hello! I am an undergraduate student at UC San Diego. I am highly interested in Digital Signal Processing, Networking, Probability, and Fun Math Topics.
 
 Some Achievements:
 - Top 8 UCSD Integration Bee 2023
