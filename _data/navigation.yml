@@ -14,7 +14,7 @@ main:
     url: /projects/
 
   - title: "Blogs"
-    url: /blog/
+    url: /blogs/
     
   - title: "Portfolio"
     url: /portfolio/
