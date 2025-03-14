@@ -1,6 +1,5 @@
 ---
 layout: archive
-permalink: /ece158b/
 title: "Data Networks (ECE 158B)"
 author_profile: true
 ---
