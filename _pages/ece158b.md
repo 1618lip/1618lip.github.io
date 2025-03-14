@@ -1,3 +1,9 @@
+---
+layout: archive
+permalink: /ece158b/
+title: "Data Networks (ECE 158B)"
+author_profile: true
+---
 
 ---
 This class is about software implementation of network systems and applications. We had hands-on measurement and implementation of network protocols (link layer, IP layer, and transport layer) and experimented with state-of-the-art network architectures and applications. 
