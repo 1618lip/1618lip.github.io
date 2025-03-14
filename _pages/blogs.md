@@ -5,6 +5,6 @@ title: "Blogs"
 author_profile: true
 ---
 
-# Blogs
 
 [Data Networks](ece158b.md)
+[Digital Signal Processing](ece251a.md)
