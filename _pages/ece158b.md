@@ -275,7 +275,3 @@ In 4G networks, scheduled access is used to allocate specific time slots or freq
 ### 5. Indirect Routing for Mobility
 
 Indirect routing addresses the challenge of maintaining connectivity as mobile users change locations. By using mechanisms such as home agents and foreign agents, the network can dynamically forward packets from the user’s original address to their current location. This technique ensures that mobile devices remain reachable regardless of their movement across different networks, thereby providing a seamless user experience even in highly dynamic environments.
-
----
-
-This detailed breakdown of each concept explains not only the technical underpinnings but also why these mechanisms are critical in building robust, efficient, and secure networks. Whether you’re designing a home network, managing enterprise infrastructure, or developing real-time communication applications, understanding these topics is fundamental to navigating the complex world of modern networking.
