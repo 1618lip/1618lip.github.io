@@ -1,4 +1,4 @@
-# ECE 158B: Data Networks
+
 ---
 This class is about software implementation of network systems and applications. We had hands-on measurement and implementation of network protocols (link layer, IP layer, and transport layer) and experimented with state-of-the-art network architectures and applications. 
 It covers the following topics: network programming over TCP/UDP sockets; application-layer protocols (DNS, HTTP, P2P); multimedia protocols (video streaming, VoIP, video telephony, virtual reality); data center networking and cloud computing; software-defined networking; network security.
