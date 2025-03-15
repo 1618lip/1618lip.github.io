@@ -19,7 +19,7 @@ This post explores foundational and advanced networking topics, diving into the 
 
 ---
 
-## Module 1: Overview
+## Overview
 
 ### 1. Structure of the Internet
 
@@ -84,7 +84,7 @@ This post explores foundational and advanced networking topics, diving into the 
 
 ---
 
-## Module 2: Network Applications
+## Network Applications
 
 ### 1. Application-Specific Transport Layer Choices
 
@@ -152,7 +152,7 @@ While web caching typically involves storing copies of frequently accessed data 
 
 ---
 
-## Module 3: Multimedia Networking
+## Multimedia Networking
 
 ### 1. Video Streaming Mechanisms
 
@@ -234,7 +234,7 @@ SDN represents a paradigm shift by decoupling the network’s control plane from
 
 ---
 
-## Module 5: Network Security and Wireless Networks
+## Network Security and Wireless Networks
 
 ### 1. Security Principles
 
