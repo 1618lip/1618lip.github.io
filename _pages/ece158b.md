@@ -5,7 +5,14 @@ author_profile: true
 ---
 
 ---
-This class is about software implementation of network systems and applications. We had hands-on measurement and implementation of network protocols (link layer, IP layer, and transport layer) and experimented with state-of-the-art network architectures and applications. 
+### Table of Contents
+> - [Overview](#overview)
+> - [Network Applications](#network-applications)
+> - [Multimedia Networking](#multimedia-networking)
+> - [Data Center Networking and SDN](#data-center-networking-and-sdn)
+> - [Network Security and Wireless Networks](#network-security-and-wireless-networks)
+
+I took this class to learn about network systems and applications. We had hands-on measurement and implementation of network protocols (link layer, IP layer, and transport layer) and experimented with state-of-the-art network architectures and applications. 
 It covers the following topics: network programming over TCP/UDP sockets; application-layer protocols (DNS, HTTP, P2P); multimedia protocols (video streaming, VoIP, video telephony, virtual reality); data center networking and cloud computing; software-defined networking; network security.
 
 This post explores foundational and advanced networking topics, diving into the structure and operation of modern networks. From the underlying architecture of the Internet to the complexities of network security and mobility, each section explains why these concepts matter and how they are used in the real world.
@@ -227,7 +234,7 @@ SDN represents a paradigm shift by decoupling the network’s control plane from
 
 ---
 
-## Module 5: Network Security
+## Module 5: Network Security and Wireless Networks
 
 ### 1. Security Principles
 
@@ -257,26 +264,23 @@ Email security combines encryption, digital signatures, and spam filtering to pr
 
 Firewalls are the first line of defense in network security, controlling incoming and outgoing traffic based on predefined rules. **Stateless firewalls** examine individual packets in isolation, offering a basic level of protection with minimal resource overhead. **Stateful firewalls**, however, maintain context about active connections, enabling them to detect and block suspicious traffic more effectively. This distinction allows organizations to balance performance with robust security based on their specific needs.
 
----
 
-## Module 6: Wireless and Mobile Networks
-
-### 1. Wireless Link Characteristics
+### 8. Wireless Link Characteristics
 
 Wireless connections differ significantly from wired ones due to factors like interference, signal attenuation, and physical obstructions. These links are prone to higher error rates and variability in quality, necessitating specialized protocols for error correction and retransmission. Understanding these characteristics is essential for designing reliable wireless systems that can adapt to environmental changes and maintain service quality.
 
-### 2. 802.11 MAC Protocol
+### 9. 802.11 MAC Protocol
 
 The 802.11 MAC protocol underpins Wi-Fi networks by employing techniques like Carrier Sense Multiple Access with Collision Avoidance (CSMA/CA). This method minimizes data collisions by ensuring that devices check for a clear channel before transmitting. Its design is crucial for efficiently managing the shared wireless medium and ensuring that multiple devices can communicate simultaneously without excessive interference.
 
-### 3. Cellular vs. Wireline Networks
+### 10. Cellular vs. Wireline Networks
 
 Cellular networks are engineered to support users on the move, offering seamless connectivity across wide geographical areas. They incorporate advanced features to handle handoffs between cells, manage interference, and optimize spectrum usage. In contrast, wireline networks, typically providing higher data rates and lower latency, are ideal for fixed locations. The differences in design and functionality highlight the trade-offs between mobility and performance.
 
-### 4. 4G vs. 802.11 MAC
+### 11. 4G vs. 802.11 MAC
 
 In 4G networks, scheduled access is used to allocate specific time slots or frequency bands to users, enhancing efficiency and reducing collisions in high-density scenarios. This controlled environment contrasts with the contention-based approach of 802.11 MAC in Wi-Fi networks, where devices compete for access to the medium. The scheduled access in 4G results in more predictable performance, which is particularly beneficial in congested environments, while the flexible, albeit less efficient, mechanism of 802.11 is well-suited for less predictable, local wireless communications.
 
-### 5. Indirect Routing for Mobility
+### 12. Indirect Routing for Mobility
 
 Indirect routing addresses the challenge of maintaining connectivity as mobile users change locations. By using mechanisms such as home agents and foreign agents, the network can dynamically forward packets from the user’s original address to their current location. This technique ensures that mobile devices remain reachable regardless of their movement across different networks, thereby providing a seamless user experience even in highly dynamic environments.
