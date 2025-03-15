@@ -198,7 +198,7 @@ WebRTC enables real-time audio, video, and data sharing directly between browser
 
 ---
 
-## Module 4: Data Center Networking and SDN
+## Data Center Networking and SDN
 
 ### 1. Data Center Traffic Patterns
 
