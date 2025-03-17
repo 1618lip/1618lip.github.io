@@ -22,12 +22,12 @@ author_profile: true
 - ECE 108: Digital Circuits
 - ECE 109: Probability and Statistics
 - ECE 111: Advanced Digital Design (PL)
-- ECE 158B: Networking (IP)
+- [ECE 158B: Networking](ece158b.md)
 - ECE 161A: Intro to Digital Signal Processing
-- ECE 176: Deep Learning (IP)
+- ECE 176: Deep Learning
 - ECE 250: Graduate Random Processes
-- ECE 251A: Graduate Digital Signal Processing (IP)
-- ECE 269: Graduate Linear Algebra (IP)
+- [ECE 251A: Graduate Digital Signal Processing](ece251a.md) 
+- [ECE 269: Graduate Linear Algebra](ece269.md) 
 - ECE 273: Convex Optimization (PL)
 <!-- -->
 
@@ -59,7 +59,7 @@ author_profile: true
 - ECON 109: Game Theory (IP)
 - ECON 138: Economics of Discrimination 
 - MUS 137A: Jazz Theory
-- MUS 137B: Jazz Improvisation I (IP)
+- MUS 137B: Jazz Improvisation I 
 - MUS 137C: Jazz Improvisation II (PL)
 <!-- -->
 
