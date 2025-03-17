@@ -4,9 +4,27 @@ title: "Digital Signal Processing (ECE 251A)"
 author_profile: true
 ---
 
-This class is taught by [Prof. Florian Meyer]() and we talked about some fundamental concepts in DSP: 
+---
+### Table of Contents
+> - [LTI Systems](#lti-systems)
+> - [Random Signals](#random-signals)
+> - [RP Modelling](#rp-modelling)
+> - [Estimation](#estimation)
+> - [Prediction](#prediction)
+> - [Levinson-Durbin Algorithm](#levinson-durbin-algorithm)
+</br>
 
-# Forward Predictor and Backward Predictor
+This class is taught by [Prof. Florian Meyer](https://fmeyer.ucsd.edu/) and we talked about some fundamental concepts in DSP that are expected from a graduate student. I took this class when I was a third-year undergraduate student. It was definitely one of the toughest courses I have ever taken, mainly due to concurrently taking a [Graduate Linear Algebra (ECE 269)](ece269.md) class too.  
+
+# LTI Systems
+
+# Random Signals
+
+# RP Modelling
+
+# Estimation
+
+# Prediction
 
 ## Forward Linear Prediction
 Given a discrete-time signal $x[n]$, the forward linear predictor estimates the current sample $x[n]$ as a linear combination of its past $p$ samples:
