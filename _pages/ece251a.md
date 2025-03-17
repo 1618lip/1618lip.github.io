@@ -28,7 +28,10 @@ This class is taught by [Prof. Florian Meyer](https://fmeyer.ucsd.edu/) and we t
 
 ## Forward Linear Prediction
 Given a discrete-time signal $x[n]$, the forward linear predictor estimates the current sample $x[n]$ as a linear combination of its past $p$ samples:
-$$\hat{x}[n] = \sum_{k=1}^{p} a_k x[n-k]$$
+
+$$
+\displaylines{\hat{x}[n] = \sum_{k=1}^{p} a_k x[n-k]}
+$$
 
 where $\{a_k\}$ are the prediction coefficients.
 
