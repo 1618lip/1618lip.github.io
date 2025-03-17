@@ -1,3 +1,11 @@
+---
+layout: archive
+title: "Digital Signal Processing (ECE 251A)"
+author_profile: true
+---
+
+This class is taught by [Prof. Florian Meyer]() and we talked about some fundamental concepts in DSP: 
+
 # Forward Predictor and Backward Predictor
 
 ## Forward Linear Prediction
