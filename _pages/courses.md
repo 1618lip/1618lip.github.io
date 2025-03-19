@@ -56,7 +56,7 @@ author_profile: true
 <!-- -->
 
 - ECON 1: Intro to Macroeconomics
-- ECON 109: Game Theory (IP)
+- ECON 109: Game Theory
 - ECON 138: Economics of Discrimination 
 - MUS 137A: Jazz Theory
 - MUS 137B: Jazz Improvisation I 
