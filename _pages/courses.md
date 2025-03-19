@@ -42,8 +42,7 @@ author_profile: true
 - CSE 100: Advanced Data Structures 
 - CSE 101: Design and Analysis of Algorithms
 - CSE 120: Operating Systems (PL)
-- CSE 140: Digital Logic 
-- CSE 140L: Digital Systems Laboratory 
+- CSE 140/140L: Digital Logic & Lab
 - CSE 141: Computer Architecture
 - CSE 153: Machine Learning for Music (PL)
 - CSE 224: Computer Networks (PL)
