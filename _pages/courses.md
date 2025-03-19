@@ -41,7 +41,7 @@ author_profile: true
 - CSE 30: Computer Organization & Systems Programming
 - CSE 100: Advanced Data Structures 
 - CSE 101: Design and Analysis of Algorithms
-- CSE 120: Operating Systems
+- CSE 120: Operating Systems (PL)
 - CSE 140: Digital Logic 
 - CSE 140L: Digital Systems Laboratory 
 - CSE 141: Computer Architecture
