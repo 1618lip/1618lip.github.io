@@ -11,7 +11,7 @@ author_profile: true
   - Proctored exams
   - (For FA24) Held quiz review discussion sessions with practice problems ([ex1](/files/109-qr-3.pdf), [ex2](/files/109-qr-5.pdf))
 
-- Tutor for ECE 45 : Signals & Systems @ UCSD ([SP25](/files/ece45sp25.pdf), [SP24](/files/ece45sp24.pdf))
+- Tutor for ECE 45 : Signals & Systems @ UCSD ([SP25](/files/ece45sp25.pdf), [SP24](/files/Pincencia_Philip_Student_IA_Evaluation_-_ECE_45_-_Circuits_and_Systems_[A00]_(Zeger_Kenneth_A.)_-_SP24.pdf))
   - Held office hours
   - Proctored exams
   - Held quiz review discussion sessions with practice problems ([ex1](/files/45-qr-1.pdf), [ex2](/files/45-qr-3.pdf))
