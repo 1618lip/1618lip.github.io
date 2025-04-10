@@ -41,7 +41,7 @@ author_profile: true
 - CSE 30: Computer Organization & Systems Programming
 - CSE 100: Advanced Data Structures 
 - CSE 101: Design and Analysis of Algorithms
-- CSE 120: Operating Systems (IP)
+- [CSE 120: Operating Systems (IP)](cse120.md)
 - CSE 140/140L: Digital Logic & Lab
 - CSE 141: Computer Architecture
 - CSE 153: Machine Learning for Music (IP)
