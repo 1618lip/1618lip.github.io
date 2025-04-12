@@ -10,7 +10,7 @@ author_profile: true
 
 [Digital Signal Processing](ece251a.md)
 
-[Probability](ECE109/ece109.html)
+[Probability](ece109/ece109.html)
 
 [Operating Systems](cse120.md)
 
