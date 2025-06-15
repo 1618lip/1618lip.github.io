@@ -1,0 +1,920 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins Bold";
+  src: url(../assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+:root {
+  color-scheme: dark;
+}
+
+main {
+  margin: auto;
+  max-width: 50rem;
+}
+
+html,
+button,
+input {
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: hsl(256, 46%, 9%);
+  color: hsl(0, 0%, 98%);
+  padding: 3rem 3rem 0 3rem;
+  background-image: url(../assets/images/background/mobile-background.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@supports not (background-image: url(../assets/images/background/mobile-background.webp)) {
+  body {
+    background-image: url(../assets/images/background/mobile-background.png);
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins Bold";
+}
+
+h1 {
+  font-size: 45px;
+  text-shadow: 3px 3px 0 hsl(258, 26%, 27%);
+}
+
+h2 {
+  font-size: 30px;
+  text-transform: lowercase;
+  line-height: normal;
+  margin: 1rem 0;
+  text-shadow: 2px 2px 0 hsl(258, 26%, 27%);
+}
+
+h3 {
+  font-size: 20px;
+  line-height: normal;
+  margin: 1rem 0;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: normal;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  line-height: 150%;
+}
+
+.subheading {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  main {
+    max-width: 120rem;
+  }
+  body {
+    padding: 0 8rem;
+    background-image: url(../assets/images/background/desktop-background.webp);
+  }
+  @supports not (background-image: url(../assets/images/background/desktop-background.webp)) {
+    body {
+      background-image: url(../assets/images/background/desktop-background.png);
+    }
+  }
+  h1 {
+    font-size: 108px;
+    text-shadow: 5px 5px 0 hsl(258, 26%, 27%);
+  }
+  h2 {
+    font-size: 60px;
+    text-transform: lowercase;
+    margin: 1rem 0;
+    text-shadow: 3px 3px 0 hsl(258, 26%, 27%);
+  }
+  h3 {
+    font-size: 40px;
+    margin: 1rem 0;
+  }
+  h4 {
+    font-size: 30px;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .subheading {
+    font-size: 24px;
+  }
+}
+.content-section {
+  margin: 12rem 0;
+}
+
+#nav-bar {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-bar-links {
+  position: absolute;
+  visibility: hidden;
+  top: 0px;
+  width: min(100%, 350px);
+  z-index: 10001;
+  background: hsla(259, 27%, 27%, 0.99);
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.open {
+  visibility: visible;
+  top: 30px;
+  opacity: 1;
+}
+
+.nav-link {
+  display: inline;
+  text-transform: lowercase;
+  font-size: 12px;
+  color: hsl(0, 0%, 63%);
+  margin: 12px 0;
+  padding: 0 25px;
+  transition: all 0.5s ease;
+}
+.nav-link li {
+  position: relative;
+}
+.nav-link li:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: -10%;
+  width: 0;
+  background: hsl(0, 0%, 98%);
+  transition: width 0.2s;
+}
+.nav-link li:hover {
+  color: hsl(0, 0%, 98%);
+}
+.nav-link li:hover:after {
+  width: 100%;
+}
+
+.resume-link {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 30px;
+  background: hsl(0, 0%, 98%);
+  color: hsl(240, 20%, 5%);
+  border-radius: 36px;
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.resume-link li:hover {
+  color: hsl(240, 20%, 5%);
+}
+.resume-link li:after {
+  display: none;
+}
+
+.resume-link:hover {
+  color: hsl(240, 20%, 5%);
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+}
+
+#resume-link-desktop {
+  display: none;
+}
+
+.menu-button i {
+  font-size: 20px;
+  color: hsl(0, 0%, 98%);
+  display: block;
+}
+
+#hero .subheading span {
+  font-family: "Poppins Bold";
+  text-decoration: underline;
+}
+#hero .subheading span span {
+  border-right: 0.1em solid;
+  animation: caret 1s steps(1) infinite;
+}
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+#about p {
+  max-width: 30rem;
+  font-size: 12px;
+}
+
+#education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#education h2 {
+  align-self: flex-start;
+}
+
+.education-content {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.education-timeline {
+  width: 12px;
+  height: 300px;
+  border-radius: 19px;
+  background: hsl(0, 0%, 98%);
+  margin: 0 2.375rem;
+}
+
+.education-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.education-year {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: -40%;
+  font-family: "Poppins Bold";
+}
+
+.education-card {
+  position: relative;
+  background-color: hsla(259, 27%, 27%, 0.2);
+  width: 21.2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-left: 1.5rem;
+}
+.education-card .subheading {
+  font-family: Poppins Bold;
+}
+
+.education-logo {
+  background-color: hsl(0, 0%, 98%);
+  width: 60px;
+  height: 60px;
+  border-radius: 36rem;
+  position: absolute;
+  top: 10%;
+  left: -35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.education-logo img {
+  height: 40px;
+}
+
+.ucsd-logo img {
+  padding-bottom: 5px;
+}
+
+#skills {
+  text-align: center;
+}
+#skills h3 {
+  text-transform: lowercase;
+}
+#skills .marquee-wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+  position: relative;
+  height: 100px;
+  margin-bottom: 5rem;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0));
+          mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0));
+}
+@keyframes scrollLeft {
+  to {
+    left: -125px;
+  }
+}
+@keyframes scrollRight {
+  to {
+    right: -125px;
+  }
+}
+#skills .skill-item {
+  width: 125px;
+  height: 100px;
+  background: hsla(259, 27%, 27%, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: absolute;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+#skills .skill-item img {
+  height: 75px;
+  width: 100px;
+}
+#skills .scroll-left {
+  left: max(625px, 100%);
+  animation-name: scrollLeft;
+}
+#skills .scroll-right {
+  right: max(625px, 100%);
+  animation-name: scrollRight;
+}
+#skills .skill-item:nth-of-type(1) {
+  animation-delay: -16s;
+}
+#skills .skill-item:nth-of-type(2) {
+  animation-delay: -12s;
+}
+#skills .skill-item:nth-of-type(3) {
+  animation-delay: -8s;
+}
+#skills .skill-item:nth-of-type(4) {
+  animation-delay: -4s;
+}
+#skills .skill-item:nth-of-type(5) {
+  animation-delay: 0s;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#projects h2 {
+  align-self: flex-end;
+}
+
+.all-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 4rem;
+}
+
+.project-card-wrapper {
+  position: relative;
+  background-color: hsla(259, 27%, 27%, 0.2);
+  max-width: 100px;
+  border-radius: 20px;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.project-card-wrapper:hover {
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+  transform: translateY(-1%);
+}
+
+.project-image-holder {
+  max-width: 100px;
+  height: 75px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+#portfolio-project .project-image-holder {
+  background: url(../assets/images/project-images/portfolio-preview.webp) lightgray 50%/cover no-repeat;
+}
+@supports not (background-image: url(../assets/images/project-images/portfolio-preview.webp)) {
+  #portfolio-project .project-image-holder {
+    background-image: url(../assets/images/project-images/portfolio-preview.png);
+  }
+}
+
+#algorithm-project .project-image-holder {
+  background: url(../assets/images/project-images/algorithm-preview.webp) lightgray 50%/cover no-repeat;
+}
+@supports not (background-image: url(../assets/images/project-images/algorithm-preview.webp)) {
+  #algorithm-project .project-image-holder {
+    background-image: url(../assets/images/project-images/algorithm-preview.png);
+  }
+}
+
+#spotify-project .project-image-holder {
+  background: url(../assets/images/project-images/spotify-preview.webp) lightgray 50%/cover no-repeat;
+}
+@supports not (background-image: url(../assets/images/project-images/spotify-preview.webp)) {
+  #spotify-project .project-image-holder {
+    background-image: url(../assets/images/project-images/spotify-preview.png);
+  }
+}
+
+.project-content {
+  padding: 1rem;
+}
+.project-content p {
+  color: #a0a0a0;
+}
+
+.project-links {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.project-links div {
+  padding: 6px 15px;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.project-links .live-site {
+  background-color: hsl(231, 38%, 34%);
+}
+.project-links .github-repo {
+  background-color: hsl(240, 20%, 5%);
+}
+.project-links div:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact h2 {
+  align-self: center;
+}
+#contact h3 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.contact-card-wrapper {
+  width: 100%;
+  max-width: 300px;
+  background-color: hsla(259, 27%, 27%, 0.2);
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+
+.all-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.lower-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button-link {
+  color: hsl(240, 20%, 5%);
+  background-color: hsl(0, 0%, 98%);
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins Bold";
+  padding: 6px 22px;
+  border-radius: 10px;
+}
+.button-link i {
+  font-size: 12px;
+  padding-right: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.button-link p {
+  transform: translateX(0px);
+  transition: all 0.1s ease-in-out;
+  opacity: 1;
+}
+.button-link:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.button-link:hover i {
+  transform: translateX(32px);
+  padding-right: 0;
+  color: #fff;
+}
+.button-link:hover p {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+#linkedin-button p {
+  padding-right: 0.2rem;
+}
+
+#github-button p {
+  padding-right: 0.6rem;
+}
+
+#email-button:hover {
+  background: hsl(0, 0%, 63%);
+}
+
+#linkedin-button:hover {
+  background: hsl(231, 38%, 34%);
+}
+
+#github-button:hover {
+  background: hsl(240, 20%, 5%);
+}
+#github-button:hover p {
+  padding-right: 1rem;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hidden-right {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(5%);
+  transition: 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hidden-left {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-5%);
+  transition: 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+footer {
+  font-size: 10px;
+  color: hsl(0, 0%, 63%);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .content-section {
+    margin: 15rem 0;
+  }
+  #nav-bar {
+    justify-content: space-between;
+    margin: 4rem 0;
+  }
+  .nav-bar-links {
+    box-shadow: none;
+    visibility: visible;
+    opacity: 1;
+    left: 0%;
+    background-color: transparent;
+    width: 55rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav-link {
+    padding: 0;
+  }
+  .nav-link li {
+    font-size: 18px;
+  }
+  #resume-link-mobile {
+    display: none;
+  }
+  #resume-link-desktop {
+    width: 175px;
+    display: inline-block;
+    position: absolute;
+    left: 0%;
+    top: 50px;
+    font-size: 18px;
+    padding-top: 11px;
+  }
+  .resume-link {
+    height: 50px;
+  }
+  .open {
+    top: 0;
+  }
+  .menu-button {
+    display: none;
+  }
+  #hero {
+    margin-top: 20rem;
+  }
+  #about p {
+    max-width: 55rem;
+    font-size: 18px;
+  }
+  .education-content {
+    flex-direction: column;
+  }
+  .education-timeline {
+    margin: 7rem 0;
+    width: 600px;
+    height: 10px;
+    border-radius: 19px;
+  }
+  .education-description {
+    flex-direction: row;
+  }
+  .education-card {
+    padding: 1rem 0;
+    width: 27.5rem;
+    margin: 0;
+  }
+  .education-logo {
+    width: 75px;
+    height: 75px;
+    top: -102.5%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .education-logo img {
+    height: 50px;
+  }
+  .education-year {
+    top: -135%;
+  }
+  .ucsd-logo img {
+    height: 65px;
+    padding-bottom: 10px;
+  }
+  #skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #skills h3 {
+    padding-top: 5px;
+  }
+  .skills-subsection {
+    display: flex;
+    width: 60rem;
+  }
+  .languages-section h3,
+  .tools-section h3 {
+    padding-right: 1rem;
+  }
+  .frontend-section {
+    flex-direction: row-reverse;
+  }
+  .frontend-section h3 {
+    padding-left: 1rem;
+  }
+  .all-projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .project-card-wrapper {
+    max-width: 250px;
+  }
+  .project-image-holder {
+    max-width: 300px;
+    height: 120px;
+  }
+  .project-content {
+    padding: 3.5rem;
+  }
+  .project-links div {
+    width: 189px;
+    height: 50px;
+    font-size: 18px;
+  }
+  .contact-card-wrapper {
+    max-width: 550px;
+    padding: 3rem 3rem;
+    border-radius: 25px;
+  }
+  .all-links {
+    gap: 20px;
+  }
+  .lower-links {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .lower-links .button-link {
+    width: 170px;
+    padding: 15px 30px;
+  }
+  .button-link i {
+    font-size: 18px;
+  }
+  #email-button {
+    width: 360px;
+    padding: 15px 120px;
+  }
+  #email-button:hover i {
+    transform: translateX(50px);
+  }
+  #linkedin-button:hover i {
+    transform: translateX(47px);
+  }
+  #github-button i {
+    padding-left: 0.7rem;
+  }
+  #github-button p {
+    padding-right: 0.8rem;
+  }
+  #github-button:hover i {
+    transform: translateX(37.5px);
+  }
+  footer {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  .nav-bar-links {
+    width: 62.5rem;
+  }
+  #resume-link-desktop {
+    left: 83.25%;
+    top: -15px;
+  }
+  .resume-link {
+    height: 50px;
+  }
+  .education-timeline {
+    margin: 7rem 0;
+    width: 900px;
+    height: 12px;
+  }
+  .education-card {
+    padding: 2rem 0;
+    width: 36rem;
+  }
+  .education-logo {
+    width: 100px;
+    height: 100px;
+    top: -95%;
+  }
+  .education-logo img {
+    height: 65px;
+  }
+  .education-year {
+    top: -125%;
+  }
+  .ucsd-logo img {
+    height: 75px;
+  }
+  .skills-subsection {
+    width: 90rem;
+  }
+}/*# sourceMappingURL=main.css.map */
+
+
+/* canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  background-color: #0a0a0a;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+} */
+
+#hero-name {
+  display: flex;
+  gap: 0.2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: transform 0.06s ease-out;
+}
+
+.name-letter {
+  display: inline-block;
+  transition: transform 0.06s ease-out, opacity 0.1s ease-out;
+}
+
+#particle-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  pointer-events: none;
+}
+
+body {
+  cursor: none;
+}
+
+/* 
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+} */
+
+#3d-graph-container {
+  position: relative;
+  height: 600px;  /* or any height you want */
+  width: 100%;
+  z-index: 0;
+}
+
+button {padding: 10px 20px;margin: 0 10px;font-size: 1.2rem;border-radius: 6px;border: none;background: #7481cd;color: white;cursor: pointer;box-shadow: 0 4px 8px rgba(150, 116, 116, 0.2);}
+button:hover {background: #303f9f;}
+#tooltip {position: absolute;z-index: 20;background: #ffffffee;padding: 10px;border-radius: 8px;box-shadow: 0 0 12px #0005;pointer-events: none;font-size: 0.85rem;max-width: 300px;display: none;}
+#tooltip.visible {display: block;}
+#scene {
+  /* position: absolute; */
+  z-index: 1;
+}
+
+#scroll-wrapper {
+  /* width: 100vw; */
+  height: 80vh;
+  overflow-x: scroll; 
+  /* overflow-y: hidden; */
+  scroll-snap-type: x mandatory;   /* 👈 enable snapping */
+  scroll-behavior: smooth;
+}
+
+/* canvas#scene {
+  height: 100%;
+  display: inline-block;
+  pointer-events: none;
+} */
+
+/* #snap-track {
+  display: flex;
+  width: fit-content;
+}
+*/
+/*
+.snap-section {
+  width: 100vw;          
+  height: 100vh;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+} */
+
