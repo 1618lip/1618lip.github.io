@@ -5,7 +5,9 @@
 const heroName = document.getElementById("hero-name");
 const nameLetters = document.querySelectorAll(".name-letter");
 let activePoles = [];
-
+let isMouseOverCanvas = false;
+let allowCursorControl = false;
+let currentWindowPlot = [];
 
 // const typewriterPhrases = [
 //   "3rd year CE Student",
@@ -183,10 +185,6 @@ function interpolateWindow(w1, w2, alpha) {
 }
 
 const sections = document.querySelectorAll(".section");
-
-let isMouseOverCanvas = false;
-let allowCursorControl = false;
-let currentWindowPlot = [];
 
 dspcanvas.addEventListener("mouseenter", () => {
   isMouseOverCanvas = true;
