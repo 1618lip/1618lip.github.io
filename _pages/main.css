@@ -4,7 +4,6 @@
 
 main {
   margin: 5px
-  
 }
 
 html,
@@ -15,7 +14,7 @@ input {
 }
 
 body {
-  background-color: white;
+  background-color: gray;
   color: black;
 
 }
