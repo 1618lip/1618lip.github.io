@@ -797,7 +797,6 @@ footer {
 } */
 
 #hero-name {
-  display: flex;
   gap: 0.15rem;
   flex-wrap: wrap;
   justify-content: center;
