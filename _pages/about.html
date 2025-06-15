@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Philip Pincencia"
+    />
+    <title>Philip Pincencia</title>
+    <script
+      src="https://kit.fontawesome.com/24fbc0d8dc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>
+      const RESUME_LINK = "https://example.com/your-resume.pdf";
+    </script>
+    
+    <script defer src="script.js"></script>
+    <script src="https://unpkg.com/three@0.150.1/build/three.min.js"></script>
+    <script src="https://unpkg.com/3d-force-graph"></script>
+    <script src="https://unpkg.com/three-spritetext"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script></head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script> -->
+    <script src="https://pixijs.download/release/pixi.min.js"></script>
+
+  </head>
+  <body>
+    <canvas id="particle-bg"></canvas>
+    <main>
+      <div id="nav-bar">
+        <ul class="nav-bar-links">
+          <a href="#about" class="nav-link" aria-label="Link to About section">
+            <li>About</li>
+          </a>
+          <a href="#skills" class="nav-link" aria-label="Link to Skills section">
+            <li>Skills</li>
+          </a>
+          <a href="#courses" class="nav-link" aria-label="Link to Courses section">
+            <li>Courses</li>
+          </a>
+          <a href="#projects" class="nav-link" aria-label="Link to Project section">
+            <li>Projects</li>
+          </a>
+          <a href="#contact" class="nav-link" aria-label="Link to Contact section">
+            <li>Contact</li>
+          </a>
+          <a data-resume-link id="resume-link-mobile" class="resume-link nav-link" aria-label="Link to resume">
+            <li>My Resume</li>
+          </a>
+        </ul>
+
+        <a data-resume-link aria-label="Link to resume">
+          <div id="resume-link-desktop" class="resume-link nav-link">
+            <p>My Resume</p>
+          </div>
+        </a>
+
+        <div class="menu-button">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <canvas id="canvas"></canvas>
+      <div id="hero" class="content-section hidden-left">
+        <pre>
+
+
+          
+        </pre>
+        <p>Hi, I’m</p>
+        <h1 id="hero-name">
+            <span class="name-letter"></span>
+            <span class="name-letter">P</span>
+            <span class="name-letter">h</span>
+            <span class="name-letter">i</span>
+            <span class="name-letter">l</span>
+            <span class="name-letter">i</span>
+            <span class="name-letter">p</span>
+            &nbsp;
+            <span class="name-letter">P</span>
+            <span class="name-letter">i</span>
+            <span class="name-letter">n</span>
+            <span class="name-letter">c</span>
+            <span class="name-letter">e</span>
+            <span class="name-letter">n</span>
+            <span class="name-letter">c</span>
+            <span class="name-letter">i</span>
+            <span class="name-letter">a</span>
+        </h1>
+
+        <p class="subheading">and I am a <span id="typewriter"></span></p>
+        
+      </div>
+      
+      
+      <div id="node-about" id="about" class="content-section hidden-right" style="display: flex; align-items: center; gap: 2rem;">
+        <img src="your-pfp.jpg" alt="Profile Picture" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+  
+        <div>
+          <h2>About</h2>
+          <p> 3rd-year Computer Engineering Student @UCSD.<br> My interest includes DSP, optimization, and software development.</p>
+        </div>
+      </div>
+
+      <!-- <div id="education" class="content-section hidden-left">
+        <h2>Education</h2>
+
+        <div class="education-content">
+          <div class="education-timeline"></div>
+          <div class="education-description">
+            
+            <div class="education-type">
+              <div class="education-card">
+                <div class="education-year">
+                  <p class="subheading">2022 - Present</p>
+                </div>
+                <div class="education-logo ucsd-logo">
+                  <picture>
+                    <source
+                      srcset="./assets/images/ucsd-logo.webp"
+                      type="image/webp"
+                    />
+                    <img src="./assets/images/ucsd-logo.png" alt="ucsd logo" />
+                  </picture>
+                </div>
+                <p class="subheading">UC San Diego</p>
+                <p>GPA: 3.82</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div id="skills" class="content-section">
+        <h2 class="hidden">Skills</h2>
+        <div class="all-skills">
+          <div class="languages-section skills-subsection hidden-left">
+            <h3>Languages</h3>
+            <div class="marquee-wrapper">
+              <div class="skill-item scroll-right">
+                <img
+                  src="./assets/images/icons/logo-javascript.svg"
+                  alt="js logo"
+                />
+              </div>
+              <div class="skill-item scroll-right">
+                <img
+                  src="./assets/images/icons/cpp.svg"
+                  alt="cpp logo"
+                />
+              </div>
+              <div class="skill-item scroll-right">
+                <img
+                  src="./assets/images/icons/python-5.svg"
+                  alt="python logo"
+                />
+              </div>
+              <div class="skill-item scroll-right">
+                <img
+                  src="./assets/images/icons/matlab.svg"
+                  alt="MATLAB logo"
+                />
+              </div>
+              <div class="skill-item scroll-right">
+                <img src="./assets/images/icons/c-1.svg" alt="c logo" />
+              </div>
+              <div class="skill-item scroll-right">
+                <img
+                  src="./assets/images/icons/java-resize.svg"
+                  alt="java logo"
+                />
+              </div>
+              <div class="skill-item scroll-right">
+                <img
+                  src="./assets/images/icons/typescript.svg"
+                  alt="typescript logo"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="frontend-section skills-subsection hidden-right">
+            <h3>Frontend</h3>
+            <div class="marquee-wrapper">
+              <div class="skill-item scroll-left">
+                <img src="./assets/images/icons/react-2.svg" alt="react logo" />
+              </div>
+              <div class="skill-item scroll-left">
+                <img src="./assets/images/icons/nodejs-3.svg" alt="node logo" />
+              </div>
+              <div class="skill-item scroll-left">
+                <img
+                  src="./assets/images/icons/tailwind-css-2.svg"
+                  alt="tailwind logo"
+                />
+              </div>
+              <div class="skill-item scroll-left">
+                <img src="./assets/images/icons/next-js.svg" alt="next logo" />
+              </div>
+            </div>
+          </div>
+
+          <div class="tools-section skills-subsection hidden-left">
+            <h3>Tools</h3>
+            <div class="marquee-wrapper">
+              <div class="skill-item scroll-right">
+                <img
+                  src="./assets/images/icons/github-icon-2.svg"
+                  alt="github logo"
+                />
+              </div>
+              <div class="skill-item scroll-right">
+                <img
+                  src="./assets/images/icons/figma-icon.svg"
+                  alt="figma-icon"
+                />
+              </div>
+              <div class="skill-item scroll-right">
+                <img
+                  src="./assets/images/icons/visual-studio-code-1.svg"
+                  alt="vs code logo"
+                />
+              </div>
+              <div class="skill-item scroll-right">
+                <img
+                  src="./assets/images/icons/Jupyter_logo.svg"
+                  alt="jupyter logo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <div id="courses">
+      <div id="nav">
+        <button id="leftBtn"><span class="material-icons">arrow_back</span></button>
+        <button id="rightBtn"><span class="material-icons">arrow_forward</span></button>
+        <h2 class="hidden">Relevant Courses</h2>
+    </div>
+    <div id="tooltip" class="hidden"></div>
+      <div id="scroll-wrapper">
+        <div id="snap-track">
+          <div class="snap-section"></div>
+        </div>
+        <canvas id="scene"></canvas>
+      </div>
+    </div>
+      <div id="projects" class="mass-node" class="content-section hidden-right">
+        <h2>Projects</h2>
+        <div class="all-projects">
+          <div class="project-card-wrapper" id="portfolio-project">
+            <div class="project-image-holder"></div>
+            <div class="project-content">
+              <h4>Autoregressive Forecasting with Differencing</h4>
+              <p>
+                
+              </p>
+
+              <div class="project-links">
+                <!-- <a href="https://jpdavalos.com" aria-label="Link to live site">
+                  <div class="live-site">Live Site</div>
+                </a> -->
+                <a
+                  href="https://github.com/jpdavalos423/portfolio-website-1.0"
+                  aria-label="Link to GitHub repo"
+                >
+                  <div class="github-repo">GitHub Repo</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card-wrapper" id="algorithm-project">
+            <div class="project-image-holder"></div>
+            <div class="project-content">
+              <h4>Graph Isomorphism Testing via Symmetry Reduction</h4>
+              <p>
+                Developing an interactive tool to help students learn common
+                sorting algorithms through step-by-step visuals. Includes basic
+                algorithms such as Bubble Sort, Selection Sort, Merge Sort, etc.
+              </p>
+
+              <div class="project-links">
+                <!-- <a href="https://sorting-algorithms-eight.vercel.app/">
+                  <div class="live-site">Live Site</div>
+                </a> -->
+                <a
+                  href="https://github.com/jpdavalos423/sorting-algorithms"
+                  aria-label="Link to GitHub repo"
+                >
+                  <div class="github-repo">GitHub Repo</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card-wrapper" id="algorithm-project">
+            <div class="project-image-holder"></div>
+            <div class="project-content">
+              <h4>Transformer Re-implementation and Evaluation</h4>
+              <p>
+                Developing an interactive tool to help students learn common
+                sorting algorithms through step-by-step visuals. Includes basic
+                algorithms such as Bubble Sort, Selection Sort, Merge Sort, etc.
+              </p>
+
+              <div class="project-links">
+                <!-- <a href="https://sorting-algorithms-eight.vercel.app/">
+                  <div class="live-site">Live Site</div>
+                </a> -->
+                <a
+                  href="https://github.com/jpdavalos423/sorting-algorithms"
+                  aria-label="Link to GitHub repo"
+                >
+                  <div class="github-repo">GitHub Repo</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card-wrapper" id="spotify-project">
+            <div class="project-image-holder"></div>
+            <div class="project-content">
+              <h4>Arithmetic Coding Compression for HFT Tick Data with Denoising using Wavelet Transforms</h4>
+              <p>
+                Real time display of currently playing song specifically
+                optimized to display on RaspberryPi. Uses Spotify API to fetch
+                user information and handles authentication process.
+              </p>
+
+              <div class="project-links">
+                <!-- <a href="#">
+                  <div class="live-site">Live Site</div>
+                </a> -->
+                <a
+                  href="https://github.com/jpdavalos423/spotify-now-playing"
+                  aria-label="Link to GitHub repo"
+                >
+                  <div class="github-repo">GitHub Repo</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact" class="content-section hidden">
+        <h2>Contact</h2>
+        <div class="contact-card-wrapper">
+          <h3>Let's get in touch</h3>
+
+          <div class="all-links">
+            <a
+              href="mailto:philip.m.pincencia@gmail.com"
+              aria-label="Link to email"
+            >
+              <div id="email-button" class="button-link">
+                <i class="fa-solid fa-envelope"></i>
+                <p>Email Me</p>
+              </div>
+            </a>
+            <div class="lower-links">
+              <a
+                href="https://www.linkedin.com/in/1618lip/"
+                aria-label="Link to LinkedIn"
+              >
+                <div id="linkedin-button" class="button-link">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <p>LinkedIn</p>
+                </div>
+              </a>
+              <a
+                href="https://github.com/1618lip"
+                aria-label="Link to GitHub profile"
+              >
+                <div id="github-button" class="button-link">
+                  <i class="fa-brands fa-github"></i>
+                  <p>GitHub</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Copyright &copy; <span id="year"></span> Philip Pincencia's Website</p>
+    </footer>
+  </body>
+</html>
