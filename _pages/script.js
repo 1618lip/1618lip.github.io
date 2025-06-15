@@ -4,32 +4,29 @@
 
 const heroName = document.getElementById("hero-name");
 const nameLetters = document.querySelectorAll(".name-letter");
-let activePoles = [];
 let isMouseOverCanvas = false;
 let allowCursorControl = false;
 let currentWindowPlot = [];
 
-// const typewriterPhrases = [
-//   "3rd year CE Student",
-//   "student at UC San Diego"
-// ];
+const typewriterPhrases = [
+  "3rd year CE Student",
+  "student at UC San Diego"
+];
 
-// function typeWriter(text, i, fnCallback) {
-//   if (i < text.length) {
-//     document.getElementById("typewriter").innerHTML =
-//       text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
-//     setTimeout(() => typeWriter(text, i + 1, fnCallback), 70);
-//   } else if (typeof fnCallback === "function") {
-//     setTimeout(fnCallback, 1000);
-//   }
-// }
+function typeWriter(text, i, fnCallback) {
+  if (i < text.length) {
+    document.getElementById("typewriter").innerHTML =
+      text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+    setTimeout(() => typeWriter(text, i + 1, fnCallback), 70);
+  } else if (typeof fnCallback === "function") {
+    setTimeout(fnCallback, 1000);
+  }
+}
 
-// function startTextAnimation(i) {
-//   if (i >= typewriterPhrases.length) i = 0;
-//   typeWriter(typewriterPhrases[i], 0, () => startTextAnimation(i + 1));
-// }
-
-
+function startTextAnimation(i) {
+  if (i >= typewriterPhrases.length) i = 0;
+  typeWriter(typewriterPhrases[i], 0, () => startTextAnimation(i + 1));
+}
 
 // =======================
 // Intersection Reveal
@@ -329,7 +326,7 @@ for (let i = 0; i < PARTICLE_COUNT; i++) {
     y: Math.random() * pCanvas.height,
     vx: (Math.random() - 0.5) * 0.3,
     vy: (Math.random() - 0.5) * 0.3,
-    opacity: 0.1
+    opacity: 0.2
   });
 }
 
