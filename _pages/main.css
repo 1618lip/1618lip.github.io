@@ -15,18 +15,12 @@ input {
 }
 
 body {
-  background-color: white;
+
   color: black;
   padding: 3rem 3rem 0 3rem;
-/*   background-image: url(../assets/images/background/mobile-background.webp); */
-/*   background-size: cover; */
-  background-repeat: no-repeat;
+
 }
-/* @supports not (background-image: url(../assets/images/background/mobile-background.webp)) {
-  body {
-    background-image: url(../assets/images/background/mobile-background.png); */
-  }
-}
+
 
 h1,
 h2,
