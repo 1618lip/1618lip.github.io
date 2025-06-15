@@ -7,25 +7,25 @@ const nameLetters = document.querySelectorAll(".name-letter");
 let activePoles = [];
 
 
-const typewriterPhrases = [
-  "3rd year CE Student",
-  "student at UC San Diego"
-];
+// const typewriterPhrases = [
+//   "3rd year CE Student",
+//   "student at UC San Diego"
+// ];
 
-function typeWriter(text, i, fnCallback) {
-  if (i < text.length) {
-    document.getElementById("typewriter").innerHTML =
-      text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
-    setTimeout(() => typeWriter(text, i + 1, fnCallback), 70);
-  } else if (typeof fnCallback === "function") {
-    setTimeout(fnCallback, 1000);
-  }
-}
+// function typeWriter(text, i, fnCallback) {
+//   if (i < text.length) {
+//     document.getElementById("typewriter").innerHTML =
+//       text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+//     setTimeout(() => typeWriter(text, i + 1, fnCallback), 70);
+//   } else if (typeof fnCallback === "function") {
+//     setTimeout(fnCallback, 1000);
+//   }
+// }
 
-function startTextAnimation(i) {
-  if (i >= typewriterPhrases.length) i = 0;
-  typeWriter(typewriterPhrases[i], 0, () => startTextAnimation(i + 1));
-}
+// function startTextAnimation(i) {
+//   if (i >= typewriterPhrases.length) i = 0;
+//   typeWriter(typewriterPhrases[i], 0, () => startTextAnimation(i + 1));
+// }
 
 document.addEventListener("DOMContentLoaded", () => {
   startTextAnimation(0);
@@ -47,23 +47,23 @@ document.querySelectorAll(".hidden, .hidden-left, .hidden-right").forEach(el =>
   observer.observe(el)
 );
 
-// =======================
-// Hamburger Menu Toggle
-// =======================
-document.querySelector(".menu-button").addEventListener("click", () => {
-  document.querySelector(".nav-bar-links").classList.toggle("open");
-});
+// // =======================
+// // Hamburger Menu Toggle
+// // =======================
+// document.querySelector(".menu-button").addEventListener("click", () => {
+//   document.querySelector(".nav-bar-links").classList.toggle("open");
+// });
 
-document.querySelectorAll(".nav-link").forEach(link => {
-  link.addEventListener("click", () =>
-    document.querySelector(".nav-bar-links").classList.remove("open")
-  );
-});
+// document.querySelectorAll(".nav-link").forEach(link => {
+//   link.addEventListener("click", () =>
+//     document.querySelector(".nav-bar-links").classList.remove("open")
+//   );
+// });
 
-// =======================
-// Auto Update Year
-// =======================
-document.getElementById("year").innerHTML = new Date().getFullYear();
+// // =======================
+// // Auto Update Year
+// // =======================
+// document.getElementById("year").innerHTML = new Date().getFullYear();
 
 // =======================
 // DSP Canvas Animation
