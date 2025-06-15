@@ -70,7 +70,7 @@ let mouseX = dspcanvas.width / 2;
 let lastMove = Date.now();
 
 let autoX = mouseX;
-let autoV = 2; // speed
+let autoV = 3; // speed
 let isIdle = false;
 
 document.addEventListener("mousemove", e => {
