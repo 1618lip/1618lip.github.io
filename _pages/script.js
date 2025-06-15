@@ -8,30 +8,30 @@ let isMouseOverCanvas = false;
 let allowCursorControl = false;
 let currentWindowPlot = [];
 
-// const typewriterPhrases = [
-//   "3rd year CE Student",
-//   "student at UC San Diego"
-// ];
+const typewriterPhrases = [
+  "3rd year CE Student @ UCSD",
+  "Interested in DSP, Optimization, ML, and Software Development"
+];
 
-// function typeWriter(text, i, fnCallback) {
-//   if (i < text.length) {
-//     document.getElementById("typewriter").innerHTML =
-//       text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
-//     setTimeout(() => typeWriter(text, i + 1, fnCallback), 70);
-//   } else if (typeof fnCallback === "function") {
-//     setTimeout(fnCallback, 1000);
-//   }
-// }
+function typeWriter(text, i, fnCallback) {
+  if (i < text.length) {
+    document.getElementById("typewriter").innerHTML =
+      text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+    setTimeout(() => typeWriter(text, i + 1, fnCallback), 70);
+  } else if (typeof fnCallback === "function") {
+    setTimeout(fnCallback, 1000);
+  }
+}
 
-// function startTextAnimation(i) {
-//   if (i >= typewriterPhrases.length) i = 0;
-//   typeWriter(typewriterPhrases[i], 0, () => startTextAnimation(i + 1));
-// }
+function startTextAnimation(i) {
+  if (i >= typewriterPhrases.length) i = 0;
+  typeWriter(typewriterPhrases[i], 0, () => startTextAnimation(i + 1));
+}
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   startTextAnimation(0);
-//   animate();
-// });
+document.addEventListener("DOMContentLoaded", () => {
+  startTextAnimation(0);
+  animate();
+});
 // =======================
 // Intersection Reveal
 // =======================
