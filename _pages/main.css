@@ -1,11 +1,3 @@
-@font-face {
-  font-family: "Poppins";
-  src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
-}
-@font-face {
-  font-family: "Poppins Bold";
-  src: url(../assets/fonts/Poppins/Poppins-Bold.ttf);
-}
 :root {
   color-scheme: dark;
 }
@@ -23,11 +15,11 @@ input {
 }
 
 body {
-  background-color: hsl(256, 46%, 9%);
+  background-color: white;
   color: hsl(0, 0%, 98%);
   padding: 3rem 3rem 0 3rem;
 /*   background-image: url(../assets/images/background/mobile-background.webp); */
-  background-size: cover;
+/*   background-size: cover; */
   background-repeat: no-repeat;
 }
 /* @supports not (background-image: url(../assets/images/background/mobile-background.webp)) {
