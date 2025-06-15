@@ -208,10 +208,6 @@ p {
   display: block;
 }
 
-#hero .subheading span {
-  font-family: "Poppins Bold";
-  text-decoration: underline;
-}
 #hero .subheading span span {
   border-right: 0.1em solid;
   animation: caret 1s steps(1) infinite;
