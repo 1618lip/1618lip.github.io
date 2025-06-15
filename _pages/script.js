@@ -428,8 +428,8 @@ for (let i = PARTICLES.length - 1; i >= 0; i--) {
   if (p.opacity > 0) {
     pCtx.beginPath();
     pCtx.arc(p.x, p.y, 2, 0, 2 * Math.PI);
-    pCtx.fillStyle = `rgba(255,255,255,${Math.max(0, p.opacity)})`;
-    pCtx.shadowColor = `rgba(0,255,255,${Math.max(0, p.opacity)})`;
+    pCtx.fillStyle = `rgba(173, 216, 230, ${Math.max(0, p.opacity)})`; // light blue fill
+    pCtx.shadowColor = `rgba(173, 216, 230, ${Math.max(0, p.opacity)})`; // light blue glow
     pCtx.shadowBlur = p.decay ? 20 : 6;
     pCtx.fill();
     pCtx.shadowBlur = 0;
