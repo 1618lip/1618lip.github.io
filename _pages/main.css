@@ -797,7 +797,7 @@ footer {
 
 #hero-name {
   gap: 0.1rem;
-  flex-wrap: wrap;
+/*   flex-wrap: wrap; */
   justify-content: center;
   transition: transform 0.06s ease-out;
 }
