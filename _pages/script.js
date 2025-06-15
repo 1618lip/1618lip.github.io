@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   startTextAnimation(0);
   animate();
 });
+
 // =======================
 // Intersection Reveal
 // =======================
