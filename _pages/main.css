@@ -26,13 +26,13 @@ body {
   background-color: hsl(256, 46%, 9%);
   color: hsl(0, 0%, 98%);
   padding: 3rem 3rem 0 3rem;
-  background-image: url(../assets/images/background/mobile-background.webp);
+/*   background-image: url(../assets/images/background/mobile-background.webp); */
   background-size: cover;
   background-repeat: no-repeat;
 }
-@supports not (background-image: url(../assets/images/background/mobile-background.webp)) {
+/* @supports not (background-image: url(../assets/images/background/mobile-background.webp)) {
   body {
-    background-image: url(../assets/images/background/mobile-background.png);
+    background-image: url(../assets/images/background/mobile-background.png); */
   }
 }
 
@@ -82,11 +82,11 @@ p {
   }
   body {
     padding: 0 8rem;
-    background-image: url(../assets/images/background/desktop-background.webp);
+/*     background-image: url(../assets/images/background/desktop-background.webp); */
   }
   @supports not (background-image: url(../assets/images/background/desktop-background.webp)) {
     body {
-      background-image: url(../assets/images/background/desktop-background.png);
+/*       background-image: url(../assets/images/background/desktop-background.png); */
     }
   }
   h1 {
@@ -422,33 +422,6 @@ p {
   max-width: 100px;
   height: 75px;
   border-radius: 20px 20px 0px 0px;
-}
-
-#portfolio-project .project-image-holder {
-  background: url(../assets/images/project-images/portfolio-preview.webp) lightgray 50%/cover no-repeat;
-}
-@supports not (background-image: url(../assets/images/project-images/portfolio-preview.webp)) {
-  #portfolio-project .project-image-holder {
-    background-image: url(../assets/images/project-images/portfolio-preview.png);
-  }
-}
-
-#algorithm-project .project-image-holder {
-  background: url(../assets/images/project-images/algorithm-preview.webp) lightgray 50%/cover no-repeat;
-}
-@supports not (background-image: url(../assets/images/project-images/algorithm-preview.webp)) {
-  #algorithm-project .project-image-holder {
-    background-image: url(../assets/images/project-images/algorithm-preview.png);
-  }
-}
-
-#spotify-project .project-image-holder {
-  background: url(../assets/images/project-images/spotify-preview.webp) lightgray 50%/cover no-repeat;
-}
-@supports not (background-image: url(../assets/images/project-images/spotify-preview.webp)) {
-  #spotify-project .project-image-holder {
-    background-image: url(../assets/images/project-images/spotify-preview.png);
-  }
 }
 
 .project-content {
