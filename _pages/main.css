@@ -28,7 +28,7 @@ h4 {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 45px;
   text-shadow: 3px 3px 0 hsl(258, 26%, 27%);
 }
 
@@ -101,7 +101,7 @@ p {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -10;
+  z-index: 2;
   pointer-events: none;
 }
 
