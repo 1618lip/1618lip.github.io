@@ -28,6 +28,10 @@ function startTextAnimation(i) {
   typeWriter(typewriterPhrases[i], 0, () => startTextAnimation(i + 1));
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  startTextAnimation(0);
+  animate();
+});
 // =======================
 // Intersection Reveal
 // =======================
