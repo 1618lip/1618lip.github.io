@@ -60,38 +60,8 @@ p {
   font-size: 14px;
 }
 
-@media (min-width: 768px) {
-  main {
-    max-width: 120rem;
-  }
-  h1 {
-    font-size: 80px;
-    text-shadow: 5px 5px 0 hsl(258, 26%, 27%);
-  }
-  h2 {
-    font-size: 60px;
-    text-transform: lowercase;
-    margin: 1rem 0;
-    text-shadow: 3px 3px 0 hsl(258, 26%, 27%);
-  }
-  h3 {
-    font-size: 40px;
-    margin: 1rem 0;
-  }
-  h4 {
-    font-size: 30px;
-    margin-bottom: 0.5rem;
-  }
-  p {
-    font-size: 18px;
-    line-height: 150%;
-  }
-  .subheading {
-    font-size: 24px;
-  }
-}
 .content-section {
-  margin: 12rem 0;
+  margin: 5rem 0;
 }
 
 #hero .subheading span span {
