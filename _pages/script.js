@@ -414,7 +414,7 @@ for (let i = PARTICLES.length - 1; i >= 0; i--) {
     p.vy *= 0.92;
     p.vx += (dx / dist) * 0.2 * attraction;
     p.vy += (dy / dist) * 0.2 * attraction;
-    p.opacity = 0.08 + 0.8 * attraction;
+    p.opacity = 0.13 + 0.8 * attraction;
   } else {
     // burst particle logic
     p.opacity -= p.decay;
