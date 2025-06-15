@@ -621,7 +621,7 @@ footer {
     display: none;
   }
   #hero {
-    margin-top: 20rem;
+    margin-top: 5rem;
   }
   #about p {
     max-width: 55rem;
@@ -798,7 +798,7 @@ footer {
 
 #hero-name {
   display: flex;
-  gap: 0.1rem;
+  gap: 0.15rem;
   flex-wrap: wrap;
   justify-content: center;
   transition: transform 0.06s ease-out;
@@ -813,12 +813,10 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 0;
   pointer-events: none;
 }
 
 body {
   cursor: none;
 }
-
-
