@@ -29,10 +29,7 @@ let currentWindowPlot = [];
 //   typeWriter(typewriterPhrases[i], 0, () => startTextAnimation(i + 1));
 // }
 
-document.addEventListener("DOMContentLoaded", () => {
-  startTextAnimation(0);
-  animate();
-});
+
 
 // =======================
 // Intersection Reveal
@@ -48,24 +45,6 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll(".hidden, .hidden-left, .hidden-right").forEach(el =>
   observer.observe(el)
 );
-
-// // =======================
-// // Hamburger Menu Toggle
-// // =======================
-// document.querySelector(".menu-button").addEventListener("click", () => {
-//   document.querySelector(".nav-bar-links").classList.toggle("open");
-// });
-
-// document.querySelectorAll(".nav-link").forEach(link => {
-//   link.addEventListener("click", () =>
-//     document.querySelector(".nav-bar-links").classList.remove("open")
-//   );
-// });
-
-// // =======================
-// // Auto Update Year
-// // =======================
-// document.getElementById("year").innerHTML = new Date().getFullYear();
 
 // =======================
 // DSP Canvas Animation
