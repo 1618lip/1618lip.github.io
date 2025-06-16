@@ -10,7 +10,7 @@ let currentWindowPlot = [];
 
 const typewriterPhrases = [
   "3rd year CE Student @ UCSD",
-  "Interested in DSP, Optimization, ML, and Software Development"
+  "interested in DSP, Optimization, ML, and Software Development"
 ];
 
 function typeWriter(text, i, fnCallback) {
