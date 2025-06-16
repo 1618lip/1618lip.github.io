@@ -17,8 +17,9 @@
 
 @import "reset";
 @import "base";
-@import "default";
-@import "dark";
+@import "theme/default";
+@import "theme/dark";
+@import "theme";
 @import "utilities";
 @import "animations";
 @import "tables";
