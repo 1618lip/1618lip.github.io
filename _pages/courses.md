@@ -28,7 +28,7 @@ author_profile: true
 - ECE 250: Graduate Random Processes
 - [ECE 251A: Graduate Digital Signal Processing](ece251a.md) 
 - [ECE 269: Graduate Linear Algebra](ece269.md) 
-- ECE 273: Convex Optimization (IP)
+- ECE 273: Convex Optimization
 <!-- -->
 
 
@@ -41,11 +41,10 @@ author_profile: true
 - CSE 30: Computer Organization & Systems Programming
 - CSE 100: Advanced Data Structures 
 - CSE 101: Design and Analysis of Algorithms
-- [CSE 120: Operating Systems (IP)](cse120.md)
+- [CSE 120: Operating Systems](cse120.md)
 - CSE 140/140L: Digital Logic & Lab
 - CSE 141: Computer Architecture
-- CSE 153: Machine Learning for Music (IP)
-- CSE 224: Computer Networks (PL)
+- CSE 153: Machine Learning for Music
 <!-- -->
 
 
@@ -59,7 +58,7 @@ author_profile: true
 - ECON 138: Economics of Discrimination 
 - MUS 137A: Jazz Theory
 - MUS 137B: Jazz Improvisation I 
-- MUS 137C: Jazz Improvisation II (IP)
+- MUS 137C: Jazz Improvisation II
 <!-- -->
 
 - AWP 4A: Analytical Writing I 
@@ -67,7 +66,7 @@ author_profile: true
 - WCWP 10A: Warren Writing 
 - WCWP 10B: Warren Writing 
 - PHIL 27: Ethics and Society I
-- POLI 28: Ethics and Society II (IP)
+- POLI 28: Ethics and Society II
 <!-- -->
 
 ### Transfer coursework:
