@@ -331,7 +331,7 @@ for (let i = 0; i < PARTICLE_COUNT; i++) {
     y: Math.random() * pCanvas.height,
     vx: (Math.random() - 0.5) * 0.3,
     vy: (Math.random() - 0.5) * 0.3,
-    opacity: 0.2
+    opacity: 0.3
   });
 }
 
