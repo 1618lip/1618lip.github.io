@@ -14,8 +14,8 @@ input {
 }
 
 body {
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
   height: 100%;
   width: 100%;
 }
