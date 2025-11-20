@@ -13,7 +13,13 @@ author_profile: true
 - MATH 20E: Vector Calculus 
 - MATH 100A: Abstract Algebra I 
 - MATH 109: Proofs
+- MATH 140A: Real Analysis I
+- MATH 158: Extremal Graph Theory
+- MATH 181A: Mathematical Statistics
+- MATH 188: Algebraic Combinatorics
+- MATH 277A: Quantum Complexity Theory
 <!-- -->
+
 
 - ECE 35: Analog Circuit Analysis 
 - ECE 45: Signals and Systems 
@@ -26,7 +32,8 @@ author_profile: true
 - ECE 161A: Intro to Digital Signal Processing
 - ECE 176: Deep Learning
 - ECE 250: Graduate Random Processes
-- [ECE 251A: Graduate Digital Signal Processing](ece251a.md) 
+- [ECE 251A: Graduate Digital Signal Processing](ece251a.md)
+- ECE 253: Digital Image Processing
 - [ECE 269: Graduate Linear Algebra](ece269.md) 
 - ECE 273: Convex Optimization
 <!-- -->
@@ -45,6 +52,7 @@ author_profile: true
 - CSE 140/140L: Digital Logic & Lab
 - CSE 141: Computer Architecture
 - CSE 153: Machine Learning for Music
+- CSE 167: Computer Graphics
 <!-- -->
 
 
@@ -53,6 +61,7 @@ author_profile: true
 - PHYS 2C: Waves, Optics, Fluids, and Thermodyanmics 
 <!-- -->
 
+
 - ECON 1: Intro to Macroeconomics
 - ECON 109: Game Theory
 - ECON 138: Economics of Discrimination 
@@ -60,6 +69,7 @@ author_profile: true
 - MUS 137B: Jazz Improvisation I 
 - MUS 137C: Jazz Improvisation II
 <!-- -->
+
 
 - AWP 4A: Analytical Writing I 
 - AWP 4B: Analytical Writing II 
@@ -71,4 +81,4 @@ author_profile: true
 
 ### Transfer coursework:
 
-- General Chemistry I, II, and III (equivalent to UCSD's CHEM 6A-C)
+- Calculus I and General Chemistry I, II, III (equivalent to UCSD's CHEM 6A-C)
