@@ -62,7 +62,7 @@ export const siteConfig = {
       title: "Incoming PCIe Intern",
       dateRange: "June 2026 - Sep 2026",
       bullets: [
-        "Working on PCIe Endpoints using QEMU & OS knowledge.
+        "Working on PCIe Endpoints using QEMU & OS knowledge."
       ],
     },
     {
