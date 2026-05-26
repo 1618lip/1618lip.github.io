@@ -1,0 +1,311 @@
+<canvas id="particle-bg" aria-hidden="true"></canvas>
+<canvas id="dsp-canvas" aria-hidden="true"></canvas>
+
+<style>
+  #particle-bg {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  #dsp-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: min(460px, 55vh);
+    z-index: 2;
+    pointer-events: none;
+  }
+</style>
+
+<script>
+  const accent = getComputedStyle(document.documentElement)
+    .getPropertyValue("--accent-color")
+    .trim() || "#1d4ed8";
+
+  // =========================
+  // Particle background
+  // =========================
+  const pCanvas = document.getElementById("particle-bg");
+  const pCtx = pCanvas?.getContext("2d");
+
+  let mouse = {
+    x: window.innerWidth / 2,
+    y: window.innerHeight / 2,
+  };
+
+  let mouseInsideCard = false;
+  let exitPoint = { x: mouse.x, y: mouse.y };
+
+  const particles = [];
+
+  function resizeParticleCanvas() {
+    if (!pCanvas) return;
+    pCanvas.width = window.innerWidth;
+    pCanvas.height = window.innerHeight;
+  }
+
+  function seedParticles() {
+    if (!pCanvas) return;
+    particles.length = 0;
+
+    const count = Math.min(500, Math.floor((window.innerWidth * window.innerHeight) / 2500));
+
+    for (let i = 0; i < count; i++) {
+      particles.push({
+        x: Math.random() * pCanvas.width,
+        y: Math.random() * pCanvas.height,
+        vx: (Math.random() - 0.5) * 0.35,
+        vy: (Math.random() - 0.5) * 0.35,
+        opacity: 0.16,
+        radius: 1.6,
+        decay: 0,
+        life: Infinity,
+      });
+    }
+  }
+
+  window.addEventListener("resize", () => {
+    resizeParticleCanvas();
+    seedParticles();
+  });
+
+  document.addEventListener("mousemove", (e) => {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+  });
+
+  function attachCardEvents() {
+    document.querySelectorAll(".project-card-wrapper").forEach((card) => {
+      card.addEventListener("mouseenter", () => {
+        mouseInsideCard = true;
+      });
+
+      card.addEventListener("mousemove", (e) => {
+        exitPoint.x = e.clientX;
+        exitPoint.y = e.clientY;
+      });
+
+      card.addEventListener("mouseleave", () => {
+        mouseInsideCard = false;
+
+        const rect = card.getBoundingClientRect();
+        const cx = rect.left + rect.width / 2;
+        const cy = rect.top + rect.height / 2;
+        const dx = exitPoint.x - cx;
+        const dy = exitPoint.y - cy;
+        const mag = Math.hypot(dx, dy) || 1;
+
+        for (let i = 0; i < 22; i++) {
+          const speed = 2.5 + Math.random() * 3;
+          const angle = Math.atan2(dy / mag, dx / mag) + (Math.random() - 0.5) * 1.4;
+
+          particles.push({
+            x: exitPoint.x,
+            y: exitPoint.y,
+            vx: Math.cos(angle) * speed,
+            vy: Math.sin(angle) * speed,
+            opacity: 0.95,
+            radius: 2,
+            decay: 0.018,
+            life: 90 + Math.random() * 40,
+          });
+        }
+      });
+    });
+  }
+
+  function drawParticles() {
+    if (!pCanvas || !pCtx) return;
+
+    pCtx.clearRect(0, 0, pCanvas.width, pCanvas.height);
+
+    for (let i = particles.length - 1; i >= 0; i--) {
+      const p = particles[i];
+
+      const dx = mouse.x - p.x;
+      const dy = mouse.y - p.y;
+      const dist = Math.hypot(dx, dy) + 0.001;
+      const attraction = Math.exp(-dist / 55);
+
+      if (p.decay === 0) {
+        p.vx *= 0.93;
+        p.vy *= 0.93;
+        p.vx += (dx / dist) * 0.22 * attraction;
+        p.vy += (dy / dist) * 0.22 * attraction;
+        p.opacity = 0.08 + 0.55 * attraction;
+      } else {
+        p.opacity -= p.decay;
+        p.life -= 1;
+      }
+
+      p.x += p.vx;
+      p.y += p.vy;
+
+      if (p.x < -20) p.x = pCanvas.width + 20;
+      if (p.x > pCanvas.width + 20) p.x = -20;
+      if (p.y < -20) p.y = pCanvas.height + 20;
+      if (p.y > pCanvas.height + 20) p.y = -20;
+
+      if (p.opacity <= 0 || p.life <= 0) {
+        particles.splice(i, 1);
+        continue;
+      }
+
+      pCtx.beginPath();
+      pCtx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+      pCtx.fillStyle = `rgba(29, 78, 216, ${Math.max(0, p.opacity)})`;
+      pCtx.shadowColor = accent;
+      pCtx.shadowBlur = p.decay ? 18 : 7;
+      pCtx.fill();
+      pCtx.shadowBlur = 0;
+    }
+
+    if (!mouseInsideCard) {
+      pCtx.beginPath();
+      pCtx.arc(mouse.x, mouse.y, 9, 0, Math.PI * 2);
+      pCtx.fillStyle = "rgba(29, 78, 216, 0.16)";
+      pCtx.shadowColor = accent;
+      pCtx.shadowBlur = 28;
+      pCtx.fill();
+      pCtx.shadowBlur = 0;
+    }
+
+    requestAnimationFrame(drawParticles);
+  }
+
+  // =========================
+  // DSP windowing animation
+  // =========================
+  const dspCanvas = document.getElementById("dsp-canvas");
+  const ctx = dspCanvas?.getContext("2d");
+
+  const N = 420;
+  const signal = Array.from({ length: N }, (_, i) => {
+    return (
+      0.55 * Math.sin((10 * Math.PI * i) / N) +
+      0.25 * Math.sin((32 * Math.PI * i) / N)
+    );
+  });
+
+  let autoX = window.innerWidth / 2;
+  let autoV = 2.2;
+  let targetX = autoX;
+  let smoothX = autoX;
+
+  function resizeDSPCanvas() {
+    if (!dspCanvas) return;
+    dspCanvas.width = window.innerWidth;
+    dspCanvas.height = Math.min(460, window.innerHeight * 0.55);
+  }
+
+  window.addEventListener("resize", resizeDSPCanvas);
+
+  document.addEventListener("mousemove", (e) => {
+    targetX = e.clientX;
+  });
+
+  function hann(n, L) {
+    return 0.5 * (1 - Math.cos((2 * Math.PI * n) / Math.max(1, L - 1)));
+  }
+
+  function triangle(n, L) {
+    return 1 - Math.abs((n - L / 2) / (L / 2));
+  }
+
+  function sinc(n, L) {
+    const x = n - L / 2;
+    return x === 0 ? 1 : Math.sin(Math.PI * x / 9) / (Math.PI * x / 9);
+  }
+
+  function absSine(n, L) {
+    return Math.abs(Math.sin((2 * Math.PI * n) / L));
+  }
+
+  const windowFns = [hann, triangle, sinc, absSine];
+  let currentFn = 0;
+  let nextFn = 1;
+  let lastSwitch = performance.now();
+  const switchEvery = 3800;
+  const transitionTime = 900;
+
+  function makeWindow(centerIdx, fnIndex, width = 110) {
+    const win = Array(N).fill(0);
+    const fn = windowFns[fnIndex];
+    const start = Math.max(0, Math.floor(centerIdx - width / 2));
+    const end = Math.min(N, Math.floor(centerIdx + width / 2));
+    const L = end - start;
+
+    for (let i = 0; i < L; i++) {
+      win[start + i] = fn(i, L);
+    }
+
+    return win;
+  }
+
+  function drawSeries(data, baseY, scaleY, alpha, lineWidth) {
+    if (!dspCanvas || !ctx) return;
+
+    ctx.beginPath();
+
+    for (let i = 0; i < N; i++) {
+      const x = (i / (N - 1)) * dspCanvas.width;
+      const y = baseY - data[i] * scaleY;
+
+      if (i === 0) ctx.moveTo(x, y);
+      else ctx.lineTo(x, y);
+    }
+
+    ctx.strokeStyle = `rgba(29, 78, 216, ${alpha})`;
+    ctx.lineWidth = lineWidth;
+    ctx.stroke();
+  }
+
+  function drawDSP(now) {
+    if (!dspCanvas || !ctx) return;
+
+    ctx.clearRect(0, 0, dspCanvas.width, dspCanvas.height);
+
+    autoX += autoV;
+    if (autoX < 60 || autoX > dspCanvas.width - 60) autoV *= -1;
+
+    const desired = Number.isFinite(targetX) ? targetX : autoX;
+    smoothX += (desired - smoothX) * 0.08;
+
+    if (now - lastSwitch > switchEvery) {
+      currentFn = nextFn;
+      do {
+        nextFn = Math.floor(Math.random() * windowFns.length);
+      } while (nextFn === currentFn);
+
+      lastSwitch = now;
+    }
+
+    const mix = Math.min((now - lastSwitch) / transitionTime, 1);
+    const centerIdx = Math.floor((smoothX / dspCanvas.width) * N);
+
+    const w1 = makeWindow(centerIdx, currentFn);
+    const w2 = makeWindow(centerIdx, nextFn);
+    const win = w1.map((v, i) => (1 - mix) * v + mix * w2[i]);
+    const windowed = signal.map((v, i) => v * win[i]);
+
+    const baseY = dspCanvas.height * 0.62;
+
+    drawSeries(signal, baseY, 65, 0.13, 1.5);
+    drawSeries(win, baseY, 95, 0.24, 2);
+    drawSeries(windowed, baseY, 95, 0.85, 2.5);
+
+    requestAnimationFrame(drawDSP);
+  }
+
+  resizeParticleCanvas();
+  resizeDSPCanvas();
+  seedParticles();
+
+  window.addEventListener("load", attachCardEvents);
+
+  drawParticles();
+  requestAnimationFrame(drawDSP);
+</script>
