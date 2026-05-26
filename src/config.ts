@@ -108,7 +108,7 @@ export const siteConfig = {
     ],
     cse: [
       "CSE 30: Computer Systems",
-      "CSE 100: Advanced Data Structures",
+      "CSE 12+100: Data Structures",
       "CSE 101: Algorithm Design & Analysis",
       "CSE 120: Operating Systems",
       "CSE 140+L: Digital Design",
