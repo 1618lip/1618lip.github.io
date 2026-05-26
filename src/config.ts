@@ -1,8 +1,7 @@
 export const siteConfig = {
   name: "Philip Pincencia",
   title: "Computer Engineering Student | DSP, Systems, and ML",
-  description:
-    "Portfolio website of Philip Pincencia, showcasing projects in signal processing, embedded systems, machine learning, operating systems, and mathematical software.",
+  description: "Portfolio website of Philip Pincencia, showcasing projects in signal processing, embedded systems, machine learning, operating systems, and mathematical software.",
   accentColor: "#1d4ed8",
   social: {
     email: "ppincencia@ucsd.edu",
