@@ -6,7 +6,6 @@ export const siteConfig = {
   social: {
     email: "ppincencia@ucsd.edu",
     linkedin: "https://linkedin.com/in/1618lip",
-    twitter: "https://x.com/ppincencia",
     github: "https://github.com/1618lip",
   },
   aboutMe:
@@ -14,6 +13,7 @@ export const siteConfig = {
   skills: [
     "C",
     "C++",
+    "C#",
     "Python",
     "MATLAB",
     "PyTorch",
@@ -108,6 +108,8 @@ export const siteConfig = {
       "ECE 111: Advanced Digital Design",
       "ECE 158B: Data Networks II",
       "ECE 161A: Intro to Digital Signal Processing",
+      "ECE 176: Deep Learning",
+      "ECE 250: Random Processes",
       "ECE 251A: Digital Signal Processing",
       "ECE 253: Image Processing",
       "ECE 269: Linear Algebra",
