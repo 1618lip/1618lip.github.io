@@ -1,0 +1,67 @@
+---
+import { siteConfig } from "../config";
+
+const courseGroups = [
+  {
+    label: "ECE",
+    title: "Electrical & Computer Engineering",
+    courses: siteConfig.courses?.ece ?? [],
+  },
+  {
+    label: "CSE",
+    title: "Computer Science",
+    courses: siteConfig.courses?.cse ?? [],
+  },
+  {
+    label: "MATH",
+    title: "Mathematics",
+    courses: siteConfig.courses?.math ?? [],
+  },
+];
+
+const visibleGroups = courseGroups.filter((group) => group.courses.length > 0);
+---
+
+{
+  visibleGroups.length > 0 && (
+    <section id="courses" class="py-20">
+      <div class="mx-auto max-w-5xl px-6">
+        <div class="mb-10">
+          <p class="text-sm uppercase tracking-[0.25em] text-neutral-500">
+            Coursework
+          </p>
+          <h2 class="mt-2 text-3xl font-semibold tracking-tight text-neutral-950">
+            Courses Taken
+          </h2>
+          <p class="mt-4 max-w-2xl text-sm leading-7 text-neutral-600">
+            A selected set of courses across computer engineering, computer science,
+            signal processing, systems, and mathematics.
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          {visibleGroups.map((group) => (
+            <div class="rounded-2xl border border-neutral-200 bg-white/75 p-6 shadow-sm backdrop-blur">
+              <div class="mb-5">
+                <span class="inline-flex rounded-full border border-neutral-200 px-3 py-1 text-xs font-medium text-neutral-600">
+                  {group.label}
+                </span>
+                <h3 class="mt-4 text-lg font-semibold text-neutral-950">
+                  {group.title}
+                </h3>
+              </div>
+
+              <ul class="space-y-3">
+                {group.courses.map((course) => (
+                  <li class="text-sm leading-6 text-neutral-700">
+                    {course}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
