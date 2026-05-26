@@ -4,17 +4,14 @@ import { siteConfig } from "../config";
 const courseGroups = [
   {
     label: "ECE",
-    title: "Electrical & Computer Engineering",
     courses: siteConfig.courses?.ece ?? [],
   },
   {
     label: "CSE",
-    title: "Computer Science",
     courses: siteConfig.courses?.cse ?? [],
   },
   {
     label: "MATH",
-    title: "Mathematics",
     courses: siteConfig.courses?.math ?? [],
   },
 ];
@@ -34,8 +31,7 @@ const visibleGroups = courseGroups.filter((group) => group.courses.length > 0);
             Courses Taken
           </h2>
           <p class="mt-4 max-w-2xl text-sm leading-7 text-neutral-600">
-            A selected set of courses across computer engineering, computer science,
-            signal processing, systems, and mathematics.
+            Selected set of courses I have taken
           </p>
         </div>
 
