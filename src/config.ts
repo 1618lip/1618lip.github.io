@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Philip Pincencia",
-  title: "Computer Engineering Student | DSP, Systems, and ML",
-  description: "Portfolio website of Philip Pincencia, showcasing projects in signal processing, embedded systems, machine learning, operating systems, and mathematical software.",
+  title: "Computer Engineering & Mathematics @ UCSD",
+  description: "Portfolio website of Philip Pincencia.",
   accentColor: "#1d4ed8",
   social: {
     email: "ppincencia@ucsd.edu",
@@ -10,7 +10,7 @@ export const siteConfig = {
     github: "https://github.com/1618lip",
   },
   aboutMe:
-    "I am a Computer Engineering & Math student at UC San Diego interested in DSP, systems programming, embedded software, optimization, and machine learning. I enjoy building projects that connect math with computing. My work often combines theory, low-level implementation, and practical engineering to turn mathematical ideas into usable tools.",
+    "I am a Computer Engineering & Math student at UC San Diego interested in DSP, systems programming, embedded software, optimization, and machine learning. I enjoy building projects that connect math with computing.",
   skills: [
     "C",
     "C++",
@@ -20,20 +20,12 @@ export const siteConfig = {
     "SystemVerilog",
     "React",
     "Next.js",
-    "TypeScript",
     "Linux",
     "Docker",
     "Vivado",
     "Git",
   ],
   projects: [
-    {
-      name: "Graph Signal Processing Network Analyzer",
-      description:
-        "Built a PyTorch-based graph signal processing project that models signals over networks, applies graph filters, and visualizes how information propagates across graph structures.",
-      link: "https://github.com/ppincencia",
-      skills: ["Python", "PyTorch", "Graph Signal Processing", "NumPy"],
-    },
     {
       name: "Embedded IIR Sensor Filtering System",
       description:
@@ -101,6 +93,13 @@ export const siteConfig = {
       school: "University of California, San Diego",
       degree: "B.S. Computer Engineering, B.S. Mathematics",
       dateRange: "Expected 2026",
+    },
+  ],
+    education: [
+    {
+      school: "University of California, San Diego",
+      degree: "B.S. Computer Engineering, B.S. Mathematics",
+      dateRange: "Expected 2026",
       achievements: [
         "Coursework in signal processing, operating systems, digital design, algorithms, probability, and abstract algebra.",
         "IEEE Signal Processing Chair.",
@@ -108,4 +107,36 @@ export const siteConfig = {
       ],
     },
   ],
+
+  courses: {
+    ece: [
+      "ECE 35: Introduction to Analog Design",
+      "ECE 45: Circuits and Systems",
+      "ECE 65: Components and Circuits Laboratory",
+      "ECE 101: Linear Systems Fundamentals",
+      "ECE 109: Engineering Probability and Statistics",
+      "ECE 111: Advanced Digital Design",
+      "ECE 161A: Introduction to Digital Signal Processing",
+    ],
+    cse: [
+      "CSE 8A: Introduction to Programming",
+      "CSE 11: Introduction to Programming and Computational Problem Solving",
+      "CSE 12: Basic Data Structures and Object-Oriented Design",
+      "CSE 30: Computer Organization and Systems Programming",
+      "CSE 100: Advanced Data Structures",
+      "CSE 101: Design and Analysis of Algorithms",
+      "CSE 120: Principles of Computer Operating Systems",
+    ],
+    math: [
+      "MATH 18: Linear Algebra",
+      "MATH 20B: Calculus for Science and Engineering II",
+      "MATH 20C: Calculus and Analytic Geometry",
+      "MATH 20D: Introduction to Differential Equations",
+      "MATH 20E: Vector Calculus",
+      "MATH 100A: Abstract Algebra I",
+      "MATH 100B: Abstract Algebra II",
+      "MATH 140A: Foundations of Real Analysis I",
+      "MATH 140B: Foundations of Real Analysis II",
+    ],
+  },
 };
