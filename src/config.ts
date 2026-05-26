@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Philip Pincencia",
   title: "Computer Engineering & Mathematics @ UCSD",
   description: "Portfolio website of Philip Pincencia.",
-  accentColor: "#bbfae6",
+  accentColor: "#57d4b2",
   social: {
     email: "ppincencia@ucsd.edu",
     linkedin: "https://linkedin.com/in/1618lip",
