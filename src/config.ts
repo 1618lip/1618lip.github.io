@@ -25,13 +25,6 @@ export const siteConfig = {
   ],
   projects: [
     {
-      name: "Embedded IIR Sensor Filtering System",
-      description:
-        "Implemented a real-time IIR filtering pipeline on Arduino using MPU6050 sensor data, reducing noise through exponential moving average filtering and validating results with MATLAB analysis.",
-      link: "https://github.com/ppincencia",
-      skills: ["C", "MATLAB", "Arduino", "I2C", "Signal Processing"],
-    },
-    {
       name: "Audio Classification Pipeline",
       description:
         "Developed an audio ML pipeline using spectrograms, MFCCs, mel features, and CNN-based models to classify music/audio samples with high test accuracy.",
@@ -52,7 +45,7 @@ export const siteConfig = {
       title: "Incoming PCIe Intern",
       dateRange: "June 2026 - Sep 2026",
       bullets: [
-        "Working on PCIe Endpoints using QEMU & OS knowledge."
+        "Working on modelling PCIe Endpoints (C, QEMU, OS)."
       ],
     },
     {
@@ -99,10 +92,8 @@ export const siteConfig = {
 
   courses: {
     ece: [
-      "ECE 35: Intro to Analog Design",
-      "ECE 45: Circuits and Systems",
-      "ECE 65: Analog Circuits",
-      "ECE 101: Linear Systems",
+      "ECE 35+65: Intro to Analog Design & Components",
+      "ECE 45+101: Linear Systems",
       "ECE 108: Digital Circuits",
       "ECE 109: Probability",
       "ECE 111: Advanced Digital Design",
@@ -120,7 +111,7 @@ export const siteConfig = {
       "CSE 100: Advanced Data Structures",
       "CSE 101: Algorithm Design & Analysis",
       "CSE 120: Operating Systems",
-      "CSE 140: Digital Design",
+      "CSE 140+L: Digital Design",
       "CSE 141: Computer Architecture",
       "CSE 153: Machine Learning for Music",
       "CSE 167: Computer Graphics",
@@ -129,8 +120,8 @@ export const siteConfig = {
       "MATH 20E: Vector Calculus",
       "MATH 100AB: Abstract Algebra I/II",
       "MATH 120AB: Complex Analysis I/II",
-      "MATH 140AB: Real Analysis I/II",
-      "MATH 181A: Mathematical Statistics",
+      "MATH 140AB: Foundations of Real Analysis I/II",
+      "MATH 181A: Mathematical Statistics I",
       "MATH 187A: Cryptography",
       "MATH 188: Algebraic Combinatorics",
       "MATH 194: Mathematics of Finance",
