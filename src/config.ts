@@ -93,18 +93,6 @@ export const siteConfig = {
       dateRange: "Expected 2026",
     },
   ],
-    education: [
-    {
-      school: "University of California, San Diego",
-      degree: "B.S. Computer Engineering, B.S. Mathematics",
-      dateRange: "Expected 2026",
-      achievements: [
-        "Coursework in signal processing, operating systems, digital design, algorithms, probability, and abstract algebra.",
-        "IEEE Signal Processing Chair.",
-        "Ben Sumner Memorial Scholarship recipient.",
-      ],
-    },
-  ],
 
   courses: {
     ece: [
@@ -127,8 +115,8 @@ export const siteConfig = {
       "CSE 100: Advanced Data Structures",
       "CSE 101: Design and Analysis of Algorithms",
       "CSE 120: Operating Systems",
-      "CSE 140: Digital Design,
-      "CSE 141: Computer Architecture,
+      "CSE 140: Digital Design",
+      "CSE 141: Computer Architecture",
       "CSE 153: Machine Learning for Music",
       "CSE 167: Computer Graphics",
     ],
