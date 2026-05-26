@@ -99,15 +99,15 @@ export const siteConfig = {
 
   courses: {
     ece: [
-      "ECE 35: Introduction to Analog Design",
+      "ECE 35: Intro to Analog Design",
       "ECE 45: Circuits and Systems",
-      "ECE 65: Components and Circuits Laboratory",
+      "ECE 65: Analog Circuits",
       "ECE 101: Linear Systems Fundamentals",
       "ECE 108: Digital Circuits",
       "ECE 109: Engineering Probability and Statistics",
       "ECE 111: Advanced Digital Design",
       "ECE 158B: Data Networks II",
-      "ECE 161A: Introduction to Digital Signal Processing",
+      "ECE 161A: Intro to Digital Signal Processing",
       "ECE 251A: Digital Signal Processing",
       "ECE 253: Image Processing",
       "ECE 269: Linear Algebra",
@@ -125,9 +125,9 @@ export const siteConfig = {
     ],
     math: [
       "MATH 20E: Vector Calculus",
-      "MATH 100AB: Abstract Algebra I/II (Group & Ring Theory)",
+      "MATH 100AB: Abstract Algebra I/II",
       "MATH 120AB: Complex Analysis I/II",
-      "MATH 140AB: Foundations of Real Analysis I/II",
+      "MATH 140AB: Real Analysis I/II",
       "MATH 181A: Mathematical Statistics",
       "MATH 187A: Cryptography",
       "MATH 188: Algebraic Combinatorics",
