@@ -91,6 +91,9 @@ export const siteConfig = {
       school: "University of California, San Diego",
       degree: "B.S. Computer Engineering, B.S. Mathematics",
       dateRange: "Expected 2026",
+      achievements: [
+      "Top 8 Integration Bee @ UCSD",
+    ],
     },
   ],
 
