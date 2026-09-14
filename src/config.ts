@@ -85,6 +85,7 @@ export const siteConfig = {
       degree: "B.S. Computer Engineering, B.S. Mathematics",
       dateRange: "Expected 2026",
       achievements: [
+      "3x ECE 109, 2x ECE 45, & CSE 101 Tutor", 
       "Top 8 Integration Bee @ UCSD",
     ],
     },
