@@ -42,10 +42,10 @@ export const siteConfig = {
   experience: [
     {
       company: "Qualcomm",
-      title: "Incoming PCIe Intern",
+      title: "Embedded Software Engineer Intern",
       dateRange: "June 2026 - Sep 2026",
       bullets: [
-        "Working on modelling PCIe Endpoints (C, QEMU, OS)."
+        "Working on modelling PCIe Endpoints (C, QEMU, OS) & drivers testing."
       ],
     },
     {
@@ -111,6 +111,7 @@ export const siteConfig = {
       "CSE 12+100: Data Structures",
       "CSE 101: Algorithm Design & Analysis",
       "CSE 120: Operating Systems",
+      "CSE 127: Computer Security",
       "CSE 140+L: Digital Design",
       "CSE 141: Computer Architecture",
       "CSE 153: Machine Learning for Music",
@@ -125,6 +126,7 @@ export const siteConfig = {
       "MATH 187A: Cryptography",
       "MATH 188: Algebraic Combinatorics",
       "MATH 194: Mathematics of Finance",
+      "MATH 240A: Real Analysis I",
       "MATH 277A: Quantum Complexity Theory",
       "MATH 285: Stochastic Processes",
     ],
