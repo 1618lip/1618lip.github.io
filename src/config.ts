@@ -9,7 +9,7 @@ export const siteConfig = {
     github: "https://github.com/1618lip",
   },
   aboutMe:
-    "I am a Computer Engineering & Math student at UC San Diego interested in DSP, systems programming, embedded software, optimization, and machine learning. I enjoy building projects that connect math with computing.",
+    "I'm a Computer Engineering & Math student at UC San Diego interested in DSP, systems programming, embedded software, optimization, and machine learning. I enjoy building projects that connect math with computing.",
   skills: [
     "C",
     "C++",
@@ -19,9 +19,6 @@ export const siteConfig = {
     "PyTorch",
     "SystemVerilog",
     "Linux",
-    "Docker",
-    "Vivado",
-    "Git",
   ],
   projects: [
     {
@@ -85,7 +82,7 @@ export const siteConfig = {
       degree: "B.S. Computer Engineering, B.S. Mathematics",
       dateRange: "Expected 2026",
       achievements: [
-      "3x ECE 109, 2x ECE 45, & CSE 101 Tutor", 
+      "3x ECE 109, 2x ECE 45, & CSE 167 Tutor", 
       "Top 8 Integration Bee @ UCSD",
     ],
     },
